@@ -38,10 +38,10 @@ const Contact = () => {
     const form = event.currentTarget;
     try {
       await emailjs.sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_lttx4qc',
+        'template_j861ay1',
         form,
-        'YOUR_PUBLIC_KEY'
+        'IT8cAk2-mACQuYoFo'
       );
       setFormStatus('success');
       form.reset();

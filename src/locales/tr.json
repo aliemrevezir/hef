@@ -13,6 +13,42 @@
       "contact": "İletişime Geç"
     }
   },
+  "about": {
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "Uluslararası ticarette güvenilir, yenilikçi ve sürdürülebilir çözümler sunarak, müşterilerimizin global başarısına katkıda bulunmak."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "description": "Global ticaret ve üretim sektöründe lider, güvenilir ve tercih edilen bir iş ortağı olmak."
+    },
+    "content": {
+      "title": "Hakkımızda",
+      "mainText": "Hefmac Global olarak, uluslararası ticaret alanında güçlü bir vizyonla faaliyet gösteriyoruz. Sunduğumuz kapsamlı hizmetler sayesinde, otomotiv ve iş makineleri yedek parçalarından mekanik üretim, talaşlı imalat ve lazer kesime kadar geniş bir yelpazede çözüm ortağınız olmaya adayız. Ayrıca, plastik kalıp ve enjeksiyon hizmetlerimizle de sektördeki birçok ihtiyaç için kaliteli çözümler sunmaktayız.",
+      "secondaryText": "Şirketimiz, müşterilerine en yüksek kaliteyi, verimliliği ve zamanında teslimatı garantileyerek, global pazarda rekabetçi avantajlar yaratmaktadır. Lojistik ve gümrükleme süreçlerinde sunduğumuz profesyonel hizmetlerle, ürünlerinizin her aşamada güvenli bir şekilde ulaşmasını sağlıyoruz.",
+      "thirdText": "Gelişen teknoloji ve pazar ihtiyaçlarına paralel olarak, her geçen gün daha da büyüyen ve güçlenen bir organizasyon olarak, dünya genelindeki müşterilerimize kaliteli ürün ve hizmetler sunmayı hedefliyoruz. Yenilikçi yaklaşımımız ve güçlü iş ağı ile, uluslararası ticaretin zorluklarını aşarak, her zaman en iyi sonuçları elde etmeyi amaçlıyoruz.",
+      "conclusion": "Hefmac Global olarak, müşteri odaklı çalışma prensibimizle, sektörümüzdeki en güvenilir ve sürdürülebilir iş ortaklarından biri olmayı hedefliyoruz."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "quality": {
+        "title": "Kalite",
+        "description": "En yüksek kalite standartlarında hizmet sunmak"
+      },
+      "innovation": {
+        "title": "Yenilikçilik",
+        "description": "Sürekli gelişim ve teknolojik yenilikleri takip etmek"
+      },
+      "reliability": {
+        "title": "Güvenilirlik",
+        "description": "Güvenilir ve şeffaf iş ilişkileri kurmak"
+      },
+      "sustainability": {
+        "title": "Sürdürülebilirlik",
+        "description": "Sürdürülebilir iş modelleri geliştirmek"
+      }
+    }
+  },
   "home": {
     "hero": {
       "title": "HEFMAC Global Lojistik",
@@ -53,6 +89,11 @@
     "rights": "Tüm hakları saklıdır",
     "address": "Ankara, Türkiye",
     "phone": "Telefon",
-    "email": "E-posta"
+    "email": "E-posta",
+    "workingHours": "Çalışma Saatleri",
+    "mondayToFriday": "Pazartesi - Cuma",
+    "saturdayToSunday": "Cumartesi - Pazar",
+    "closed": "Kapalı",
+    "quickLinks": "Hızlı Bağlantılar"
   }
-} 
+}

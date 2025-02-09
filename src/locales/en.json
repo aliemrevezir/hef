@@ -13,6 +13,42 @@
       "contact": "Contact Us"
     }
   },
+  "about": {
+    "mission": {
+      "title": "Our Mission",
+      "description": "To contribute to our customers' global success by providing reliable, innovative, and sustainable solutions in international trade."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become a leading, trusted, and preferred business partner in global trade and manufacturing."
+    },
+    "content": {
+      "title": "About Us",
+      "mainText": "At Hefmac Global, we operate with a strong vision in international trade. Through our comprehensive services, we aim to be your solution partner in a wide range of areas from automotive and construction machinery spare parts to mechanical production, machining, and laser cutting. Additionally, we offer quality solutions for many industry needs with our plastic mold and injection services.",
+      "secondaryText": "Our company creates competitive advantages in the global market by guaranteeing the highest quality, efficiency, and timely delivery to our customers. With our professional services in logistics and customs clearance processes, we ensure the safe delivery of your products at every stage.",
+      "thirdText": "As an organization that grows and strengthens every day in parallel with developing technology and market needs, we aim to provide quality products and services to our customers worldwide. With our innovative approach and strong business network, we aim to achieve the best results by overcoming the challenges of international trade.",
+      "conclusion": "As Hefmac Global, with our customer-focused working principle, we aim to be one of the most reliable and sustainable business partners in our industry."
+    },
+    "values": {
+      "title": "Our Values",
+      "quality": {
+        "title": "Quality",
+        "description": "Providing service at the highest quality standards"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Following continuous development and technological innovations"
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "Building reliable and transparent business relationships"
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "Developing sustainable business models"
+      }
+    }
+  },
   "home": {
     "hero": {
       "title": "HEFMAC Global Logistics",
@@ -53,6 +89,11 @@
     "rights": "All rights reserved",
     "address": "Ankara, Turkey",
     "phone": "Phone",
-    "email": "Email"
+    "email": "Email",
+    "workingHours": "Working Hours",
+    "mondayToFriday": "Monday - Friday",
+    "saturdayToSunday": "Saturday - Sunday",
+    "closed": "Closed",
+    "quickLinks": "Quick Links"
   }
 } 
