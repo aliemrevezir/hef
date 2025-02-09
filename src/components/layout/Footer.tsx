@@ -77,6 +77,20 @@ const SocialIcon = styled(Box)(({ theme }) => ({
   },
 })) as typeof Box;
 
+const StyledSignature = styled(Link)(({ theme }) => ({
+  position: 'absolute',
+  bottom: theme.spacing(2),
+  right: theme.spacing(2),
+  color: alpha('#333', 0.6),
+  textDecoration: 'none',
+  fontSize: '0.75rem',
+  fontStyle: 'italic',
+  transition: 'color 0.3s ease',
+  '&:hover': {
+    color: '#333',
+  },
+})) as typeof Link;
+
 const Footer = () => {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
@@ -190,14 +204,22 @@ const Footer = () => {
             borderTop: '1px solid',
             borderColor: alpha('#333', 0.1),
             textAlign: 'center',
+            position: 'relative',
           }}
         >
           <Typography variant="body2" color="text.secondary">
-            © {currentYear} {t('footer.company')}. {t('footer.rights')}
+            © {currentYear} {t('footer.company')}. {t('footer.rights')}.
           </Typography>
+          <StyledSignature
+            href="https://wezirim.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            designed by wezirim
+          </StyledSignature>
         </Box>
       </Container>
-    </StyledFooter>
+    </StyledFooter> 
   );
 };
 
