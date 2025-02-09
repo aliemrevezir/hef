@@ -1,0 +1,58 @@
+{
+  "common": {
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "readMore": "Read More",
+      "sendMessage": "Send Message",
+      "learnMore": "Learn More",
+      "contact": "Contact Us"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "HEFMAC Global Logistics",
+      "subtitle": "Fast, Reliable, and Cost-Effective Logistics Services Worldwide",
+      "description": "HEFMAC Global offers end-to-end logistics solutions, including international transportation, customs clearance, and supply chain management. Trust our expertise for seamless global trade."
+    },
+    "services": {
+      "title": "Comprehensive Logistics Services Tailored to Your Needs",
+      "description": "From international freight forwarding to warehousing and distribution, we provide customized logistics solutions to optimize your supply chain and reduce costs.",
+      "cards": {
+        "logistic": {
+          "title": "Logistic",
+          "description": "Efficient and reliable road transportation services across Europe and Asia."
+        },
+        "mechanicalProduction": {
+          "title": "Mechanical Production",
+          "description": "Advanced manufacturing solutions for industrial excellence."
+        },
+        "electronicProduction": {
+          "title": "Electronic Production",
+          "description": "Advanced manufacturing solutions for industrial excellence."
+        }
+      }
+    },
+    "mechanicalProduction": {
+      "title": "Mechanical Production",
+      "subtitle": "Advanced Manufacturing Solutions for Industrial Excellence",
+      "description": "HEFMAC Global delivers high-quality mechanical production services, including CNC machining, laser cutting, and industrial manufacturing, ensuring precision and efficiency for your projects."
+    },
+    "electronicProduction": {
+      "title": "Electronic Manufacturing & Innovative Solutions",
+      "subtitle": "Cutting-Edge Technology for Your Electronic Products",
+      "description": "Our electronic production services include PCB assembly, product testing, and quality assurance, providing reliable and innovative solutions for the tech industry."
+    }
+  },
+  "footer": {
+    "company": "HEFMAC Global",
+    "rights": "All rights reserved",
+    "address": "Ankara, Turkey",
+    "phone": "Phone",
+    "email": "Email"
+  }
+} 

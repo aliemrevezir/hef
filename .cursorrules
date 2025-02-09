@@ -1,0 +1,70 @@
+# HEFMAC Global Website Cursor Rules
+
+## 1. Çok Dilli Yapı Kuralları
+- Tüm metin içerikleri i18n sistemi üzerinden yönetilmeli
+- Yeni eklenen her metin için TR ve EN çevirileri locales/ altına eklenmelidir
+- Sabit metinler yerine translation key'leri kullanılmalıdır
+- Dil dosyaları modüler ve kategorik olarak düzenlenmelidir
+
+## 2. SEO Optimizasyon Kuralları
+- Her sayfa için Helmet komponenti kullanılmalıdır
+- Title, description ve keywords meta tag'leri dinamik olmalıdır
+- URL yapısı SEO dostu olmalıdır (örn: /hizmetlerimiz yerine /services)
+- Semantic HTML elementleri kullanılmalıdır
+- Google Analytics event'leri önemli etkileşimler için eklenmelidir
+
+## 3. Komponent Yapısı Kuralları
+- Her komponent kendi klasöründe bulunmalıdır
+- Komponent dosya yapısı:
+  * index.tsx (ana komponent)
+  * styles.module.css (stil dosyası)
+  * types.ts (tip tanımlamaları)
+  * utils.ts (yardımcı fonksiyonlar)
+- Her komponent için ayrı css dosyaları veya tailwind class'ları oluşturulmalıdır
+- Komponentler mümkün olduğunca atomik ve tekrar kullanılabilir olmalıdır
+- Props interface'leri açıkça tanımlanmalıdır
+
+## 4. Stil ve CSS Kuralları
+- Tailwind utility class'ları öncelikli kullanılmalıdır
+- Özel stiller için CSS modules kullanılmalıdır
+- Global stiller styles/global.css'de tanımlanmalıdır
+- MUI tema sistemi kullanılmalıdır
+- Responsive tasarım için Tailwind breakpoint'leri kullanılmalıdır
+
+## 5. Performans Kuralları
+- Lazy loading için React.lazy() kullanılmalıdır
+- Büyük paketler için code splitting uygulanmalıdır
+- Görsel optimizasyonları yapılmalıdır
+- Gereksiz re-render'lar önlenmelidir
+- useCallback ve useMemo hooks'ları gerektiğinde kullanılmalıdır
+
+## 6. Animasyon Kuralları
+- Framer Motion için variants kullanılmalıdır
+- Scroll animasyonları için react-intersection-observer kullanılmalıdır
+- Performans için animate prop'u koşullu kullanılmalıdır
+- Animasyonlar kullanıcı deneyimini geliştirmelidir
+
+## 7. Form ve API Kuralları
+- Form validasyonları client-side yapılmalıdır
+- EmailJS için try-catch blokları kullanılmalıdır
+- API çağrıları utils/ altında modüler olarak yönetilmelidir
+- Loading ve error state'leri kullanıcıya gösterilmelidir
+
+## 8. Git Kuralları
+- Commit mesajları açıklayıcı olmalıdır
+- Feature branch'leri kullanılmalıdır
+- PR'lar küçük ve odaklı olmalıdır
+- Merge conflict'ler dikkatli çözülmelidir
+
+## 9. Kod Kalitesi Kuralları
+- TypeScript strict mode kullanılmalıdır
+- ESLint kurallarına uyulmalıdır
+- Prettier ile kod formatlanmalıdır
+- Kod tekrarından kaçınılmalıdır
+- Fonksiyonlar tek sorumluluk prensibine uymalıdır
+
+## 10. Dokümantasyon Kuralları
+- Kompleks komponentler için JSDoc kullanılmalıdır
+- README.md güncel tutulmalıdır
+- Önemli iş mantığı için kod içi yorumlar eklenmelidir
+- API entegrasyonları dökümante edilmelidir 

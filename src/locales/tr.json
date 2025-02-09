@@ -1,0 +1,58 @@
+{
+  "common": {
+    "navigation": {
+      "home": "Ana Sayfa",
+      "about": "Hakkımızda",
+      "services": "Hizmetlerimiz",
+      "contact": "İletişim"
+    },
+    "buttons": {
+      "readMore": "Devamını Oku",
+      "sendMessage": "Mesaj Gönder",
+      "learnMore": "Daha Fazla Bilgi",
+      "contact": "İletişime Geç"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "HEFMAC Global Lojistik",
+      "subtitle": "Dünyada Hızlı, Güvenilir ve Maliyet Etkin Lojistik Hizmetleri",
+      "description": "HEFMAC Global, uluslararası taşımacılık, gümrük işlemleri ve tedarik zinciri yönetimi dahil olmak üzere uçtan uca lojistik çözümleri sunmaktadır. Sorunsuz küresel ticaret için uzmanlığımıza güvenin."
+    },
+    "services": {
+      "title": "İhtiyaçlarınıza Özel Kapsamlı Lojistik Hizmetleri",
+      "description": "Uluslararası nakliye taşımacılığından depo ve dağıtım hizmetlerine kadar, tedarik zincirinizi optimize etmek ve maliyetleri azaltmak için özelleştirilmiş lojistik çözümleri sunuyoruz.",
+      "cards": {
+        "logistic": {
+          "title": "Lojistik",
+          "description": "Avrupa ve Asya genelinde verimli ve güvenilir lojistik hizmetleri."
+        },
+        "mechanicalProduction": {
+          "title": "Mekanik Üretim",
+          "description": "Endüstriyel mükemmeliyet için gelişmiş üretim çözümleri."
+        },
+        "electronicProduction": {
+          "title": "Elektronik Üretim",
+          "description": "Elektronik ürünleriniz için son teknoloji."
+        }
+      }
+    },
+    "mechanicalProduction": {
+      "title": "Mekanik Üretim",
+      "subtitle": "Endüstriyel Mükemmeliyet İçin Gelişmiş Üretim Çözümleri",
+      "description": "HEFMAC Global, CNC işleme, lazer kesim ve endüstriyel üretim gibi yüksek kaliteli mekanik üretim hizmetleri sunarak projeleriniz için hassasiyet ve verimlilik sağlar."
+    },
+    "electronicProduction": {
+      "title": "Elektronik Üretim & Yenilikçi Çözümler",
+      "subtitle": "Elektronik Ürünleriniz İçin Son Teknoloji",
+      "description": "Elektronik üretim hizmetlerimiz, PCB montajı, ürün testi ve kalite güvencesi dahil olmak üzere, teknoloji endüstrisi için güvenilir ve yenilikçi çözümler sunmaktadır."
+    }
+  },
+  "footer": {
+    "company": "HEFMAC Global",
+    "rights": "Tüm hakları saklıdır",
+    "address": "Ankara, Türkiye",
+    "phone": "Telefon",
+    "email": "E-posta"
+  }
+} 
