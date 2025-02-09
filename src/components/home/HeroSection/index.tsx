@@ -185,10 +185,10 @@ const HeroSection = () => {
                       {slide.description}
                     </Typography>
                     <Box sx={{ mt: 4 }}>
-                      <StyledButton variant="contained">
+                      <StyledButton variant="contained" href="/services">
                         {t('common.buttons.learnMore')}
                       </StyledButton>
-                      <StyledButton 
+                      <StyledButton href="/contact"
                         variant="outlined" 
                         sx={{ 
                           borderColor: '#fff', 

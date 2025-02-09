@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "strict": true
+    "strict": true,
+    "lib": ["ES2015", "DOM", "DOM.Iterable"]
   },
   "include": ["src"]
 }

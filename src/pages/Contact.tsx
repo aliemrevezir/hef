@@ -10,26 +10,84 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { motion } from 'framer-motion';
+import { styled, alpha } from '@mui/material/styles';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import emailjs from '@emailjs/browser';
+
+const StyledCard = styled(Card)(({ theme }) => ({
+  height: '100%',
+  backgroundColor: '#fff',
+  borderRadius: '24px',
+  transition: 'all 0.3s ease-in-out',
+  border: '1px solid',
+  borderColor: alpha('#e3e3e3', 0.2),
+  overflow: 'hidden',
+  '&:hover': {
+    transform: 'translateY(-8px)',
+    boxShadow: '0 12px 24px rgba(0, 0, 0, 0.1)',
+  },
+}));
+
+const IconWrapper = styled(Box)(({ theme }) => ({
+  width: '56px',
+  height: '56px',
+  borderRadius: '16px',
+  backgroundColor: '#e3e3e3',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginRight: theme.spacing(3),
+  transition: 'all 0.3s ease',
+  '& svg': {
+    fontSize: '28px',
+    color: '#333',
+    transition: 'all 0.3s ease',
+  },
+  '&:hover': {
+    backgroundColor: '#333',
+    transform: 'rotate(10deg)',
+    '& svg': {
+      color: '#e3e3e3',
+    },
+  },
+}));
+
+const StyledTextField = styled(TextField)(({ theme }) => ({
+  '& .MuiOutlinedInput-root': {
+    borderRadius: '12px',
+    backgroundColor: alpha('#fff', 0.6),
+    transition: 'all 0.3s ease',
+    '&:hover': {
+      backgroundColor: alpha('#fff', 0.8),
+    },
+    '&.Mui-focused': {
+      backgroundColor: '#fff',
+      '& .MuiOutlinedInput-notchedOutline': {
+        borderColor: '#333',
+      },
+    },
+  },
+}));
+
+const StyledButton = styled(Button)(({ theme }) => ({
+  borderRadius: '12px',
+  padding: '12px 32px',
+  fontSize: '16px',
+  fontWeight: 600,
+  textTransform: 'none',
+  backgroundColor: '#333',
+  color: '#fff',
+  '&:hover': {
+    backgroundColor: '#000',
+  },
+}));
 
 const Contact = () => {
   const { t } = useTranslation();
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
-
-  const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: 'easeOut',
-      },
-    },
-  };
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -37,176 +95,274 @@ const Contact = () => {
 
     const form = event.currentTarget;
     try {
-      await emailjs.sendForm(
+      const result = await emailjs.sendForm(
         'service_lttx4qc',
         'template_j861ay1',
         form,
         'IT8cAk2-mACQuYoFo'
       );
-      setFormStatus('success');
-      form.reset();
+
+      if (result.status === 200) {
+        setFormStatus('success');
+        form.reset();
+      } else {
+        throw new Error('Email sending failed');
+      }
     } catch (error) {
-      setFormStatus('error');
       console.error('Error sending email:', error);
+      setFormStatus('error');
     }
   };
 
   const contactInfo = [
     {
+      icon: LocationOnIcon,
+      title: t('contact.info.address.title'),
+      content: t('contact.info.address.content'),
+    },
+    {
       icon: PhoneIcon,
-      title: t('footer.phone'),
-      content: '+90 (212) XXX XX XX',
+      title: t('contact.info.phone.title'),
+      content: t('contact.info.phone.content'),
     },
     {
       icon: EmailIcon,
-      title: t('footer.email'),
-      content: 'info@hefmacglobal.com',
+      title: t('contact.info.email.title'),
+      content: t('contact.info.email.content'),
     },
     {
-      icon: LocationOnIcon,
-      title: t('footer.address'),
-      content: 'Istanbul, Turkey',
+      icon: AccessTimeIcon,
+      title: t('contact.info.workingHours.title'),
+      content: (
+        <>
+          {t('contact.info.workingHours.weekdays')}
+          <br />
+          {t('contact.info.workingHours.weekend')}
+        </>
+      ),
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>{t('common.navigation.contact')} - {t('footer.company')}</title>
-        <meta name="description" content="Contact HEFMAC Global for logistics and transportation solutions." />
+        <title>{t('contact.hero.title')} - {t('footer.company')}</title>
+        <meta name="description" content={t('contact.hero.description')} />
+        <meta name="keywords" content="contact, get in touch, business inquiries, customer support, global logistics" />
       </Helmet>
 
-      <Container maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
-        >
-          <Typography
-            component="h1"
-            variant="h2"
-            align="center"
-            gutterBottom
-            sx={{ fontWeight: 700 }}
+      {/* Hero Section */}
+      <Box
+        sx={{
+          bgcolor: '#e3e3e3',
+          py: { xs: 8, md: 12 },
+          position: 'relative',
+          overflow: 'hidden',
+          '&::before': {
+            content: '""',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            height: '4px',
+            background: 'linear-gradient(90deg, #333 0%, rgba(51,51,51,0.3) 100%)',
+          },
+        }}
+      >
+        <Container maxWidth="lg">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
           >
-            {t('common.navigation.contact')}
-          </Typography>
+            <Typography
+              variant="h1"
+              align="center"
+              sx={{
+                fontWeight: 700,
+                color: '#333',
+                fontSize: { xs: '2.5rem', md: '4rem' },
+                mb: 2,
+                letterSpacing: '-0.5px',
+              }}
+            >
+              {t('contact.hero.title')}
+            </Typography>
+            <Typography
+              variant="h4"
+              align="center"
+              sx={{
+                color: '#555',
+                fontSize: { xs: '1.5rem', md: '2rem' },
+                mb: 3,
+                fontWeight: 500,
+              }}
+            >
+              {t('contact.hero.subtitle')}
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              sx={{
+                color: '#666',
+                fontSize: { xs: '1rem', md: '1.25rem' },
+                maxWidth: '800px',
+                mx: 'auto',
+                lineHeight: 1.8,
+              }}
+            >
+              {t('contact.hero.description')}
+            </Typography>
+          </motion.div>
+        </Container>
+      </Box>
 
-          <Grid container spacing={6} sx={{ mt: 4 }}>
-            <Grid item xs={12} md={6}>
-              <form onSubmit={handleSubmit}>
-                <Grid container spacing={3}>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      required
-                      fullWidth
-                      label="First Name"
-                      name="firstName"
-                    />
+      {/* Contact Form & Info Section */}
+      <Container maxWidth="lg" sx={{ py: { xs: 8, md: 12 } }}>
+        <Grid container spacing={6}>
+          {/* Contact Form */}
+          <Grid item xs={12} md={7}>
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <StyledCard sx={{ p: 4 }}>
+                <Typography
+                  variant="h4"
+                  gutterBottom
+                  sx={{
+                    fontWeight: 700,
+                    color: '#333',
+                    mb: 4,
+                    fontSize: { xs: '1.75rem', md: '2rem' },
+                  }}
+                >
+                  {t('contact.form.title')}
+                </Typography>
+                <form onSubmit={handleSubmit}>
+                  <Grid container spacing={3}>
+                    <Grid item xs={12} sm={6}>
+                      <StyledTextField
+                        required
+                        fullWidth
+                        label={t('contact.form.firstName')}
+                        name="firstName"
+                      />
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                      <StyledTextField
+                        required
+                        fullWidth
+                        label={t('contact.form.lastName')}
+                        name="lastName"
+                      />
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                      <StyledTextField
+                        required
+                        fullWidth
+                        label={t('contact.form.email')}
+                        name="email"
+                        type="email"
+                      />
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                      <StyledTextField
+                        fullWidth
+                        label={t('contact.form.phone')}
+                        name="phone"
+                      />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <StyledTextField
+                        required
+                        fullWidth
+                        label={t('contact.form.subject')}
+                        name="subject"
+                      />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <StyledTextField
+                        required
+                        fullWidth
+                        label={t('contact.form.message')}
+                        name="message"
+                        multiline
+                        rows={4}
+                      />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <StyledButton
+                        type="submit"
+                        variant="contained"
+                        fullWidth
+                        disabled={formStatus === 'sending'}
+                      >
+                        {formStatus === 'sending'
+                          ? t('contact.form.sending')
+                          : t('common.buttons.sendMessage')}
+                      </StyledButton>
+                      {formStatus === 'success' && (
+                        <Typography color="success.main" sx={{ mt: 2, textAlign: 'center' }}>
+                          {t('contact.form.success')}
+                        </Typography>
+                      )}
+                      {formStatus === 'error' && (
+                        <Typography color="error" sx={{ mt: 2, textAlign: 'center' }}>
+                          {t('contact.form.error')}
+                        </Typography>
+                      )}
+                    </Grid>
                   </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField
-                      required
-                      fullWidth
-                      label="Last Name"
-                      name="lastName"
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <TextField
-                      required
-                      fullWidth
-                      label="Email"
-                      name="email"
-                      type="email"
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <TextField
-                      required
-                      fullWidth
-                      label="Subject"
-                      name="subject"
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <TextField
-                      required
-                      fullWidth
-                      label="Message"
-                      name="message"
-                      multiline
-                      rows={4}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Button
-                      type="submit"
-                      variant="contained"
-                      color="primary"
-                      size="large"
-                      fullWidth
-                      disabled={formStatus === 'sending'}
-                    >
-                      {formStatus === 'sending'
-                        ? 'Sending...'
-                        : t('common.buttons.sendMessage')}
-                    </Button>
-                    {formStatus === 'success' && (
-                      <Typography color="success" sx={{ mt: 2 }}>
-                        Message sent successfully!
-                      </Typography>
-                    )}
-                    {formStatus === 'error' && (
-                      <Typography color="error" sx={{ mt: 2 }}>
-                        Error sending message. Please try again.
-                      </Typography>
-                    )}
-                  </Grid>
-                </Grid>
-              </form>
-            </Grid>
+                </form>
+              </StyledCard>
+            </motion.div>
+          </Grid>
 
-            <Grid item xs={12} md={6}>
+          {/* Contact Info */}
+          <Grid item xs={12} md={5}>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
               <Grid container spacing={3}>
                 {contactInfo.map((info, index) => {
                   const Icon = info.icon;
                   return (
                     <Grid item xs={12} key={index}>
-                      <Card>
-                        <CardContent>
+                      <StyledCard>
+                        <CardContent sx={{ p: 3 }}>
                           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                            <Icon sx={{ fontSize: 40, color: 'primary.main', mr: 2 }} />
+                            <IconWrapper>
+                              <Icon />
+                            </IconWrapper>
                             <Box>
-                              <Typography variant="h6" gutterBottom>
+                              <Typography
+                                variant="h6"
+                                gutterBottom
+                                sx={{ fontWeight: 600, color: '#333' }}
+                              >
                                 {info.title}
                               </Typography>
-                              <Typography color="text.secondary">
+                              <Typography
+                                variant="body1"
+                                sx={{ color: '#666', lineHeight: 1.6 }}
+                              >
                                 {info.content}
                               </Typography>
                             </Box>
                           </Box>
                         </CardContent>
-                      </Card>
+                      </StyledCard>
                     </Grid>
                   );
                 })}
               </Grid>
-
-              <Box sx={{ mt: 4 }}>
-                <Typography variant="h6" gutterBottom>
-                  Business Hours
-                </Typography>
-                <Typography color="text.secondary" paragraph>
-                  Monday - Friday: 9:00 - 18:00
-                </Typography>
-                <Typography color="text.secondary">
-                  Saturday - Sunday: Closed
-                </Typography>
-              </Box>
-            </Grid>
+            </motion.div>
           </Grid>
-        </motion.div>
+        </Grid>
       </Container>
     </>
   );

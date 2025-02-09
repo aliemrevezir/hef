@@ -95,5 +95,122 @@
     "saturdayToSunday": "Saturday - Sunday",
     "closed": "Closed",
     "quickLinks": "Quick Links"
+  },
+  "services": {
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "Your Global Solution Partner",
+      "description": "At HEFMAC Global, we provide comprehensive solutions in international trade and manufacturing"
+    },
+    "main": {
+      "logistics": {
+        "title": "Logistics Services",
+        "description": "We offer efficient and reliable logistics solutions across Europe and Asia. Our expert team is at your service for land, air, and sea transportation.",
+        "features": [
+          "International Transportation",
+          "Customs Operations",
+          "Warehousing Services",
+          "Supply Chain Management"
+        ]
+      },
+      "mechanical": {
+        "title": "Mechanical Production",
+        "description": "We provide high-quality mechanical production services in our modern manufacturing facilities. We specialize in CNC machining and precision manufacturing.",
+        "features": [
+          "CNC Machining",
+          "Precision Manufacturing",
+          "Quality Control",
+          "Prototype Production"
+        ]
+      },
+      "electronic": {
+        "title": "Electronic Production",
+        "description": "We offer innovative solutions in electronic production. We provide professional service in all processes from PCB assembly to product testing.",
+        "features": [
+          "PCB Assembly",
+          "Electronic Testing",
+          "Quality Assurance",
+          "R&D Support"
+        ]
+      },
+      "industrial": {
+        "title": "Industrial Solutions",
+        "description": "We provide comprehensive solutions in industrial production and automation systems. We increase efficiency with modern technologies.",
+        "features": [
+          "Automation Systems",
+          "Industrial Equipment",
+          "Technical Service",
+          "Maintenance Services"
+        ]
+      }
+    },
+    "why": {
+      "title": "Why Choose Us?",
+      "items": [
+        {
+          "title": "Global Network",
+          "description": "Strong business partnerships worldwide"
+        },
+        {
+          "title": "Expert Team",
+          "description": "Experienced and professional staff"
+        },
+        {
+          "title": "24/7 Support",
+          "description": "Continuous customer service"
+        },
+        {
+          "title": "Custom Solutions",
+          "description": "Tailored service approach"
+        },
+        {
+          "title": "Real-time Tracking",
+          "description": "Real-time process management"
+        },
+        {
+          "title": "Cost Advantage",
+          "description": "Competitive and transparent pricing"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact",
+      "subtitle": "Get in Touch",
+      "description": "Contact us for your questions and needs. We will get back to you as soon as possible."
+    },
+    "form": {
+      "title": "Send Message",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "sending": "Sending...",
+      "success": "Your message has been sent successfully!",
+      "error": "Error sending message. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Address",
+        "content": "Ankara, Turkey"
+      },
+      "phone": {
+        "title": "Phone",
+        "content": "+90 (212) XXX XX XX"
+      },
+      "email": {
+        "title": "Email",
+        "content": "info@hefmacglobal.com"
+      },
+      "workingHours": {
+        "title": "Working Hours",
+        "weekdays": "Monday - Friday: 09:00 - 18:00",
+        "weekend": "Saturday - Sunday: Closed"
+      }
+    }
   }
 } 

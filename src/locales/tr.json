@@ -95,5 +95,122 @@
     "saturdayToSunday": "Cumartesi - Pazar",
     "closed": "Kapalı",
     "quickLinks": "Hızlı Bağlantılar"
+  },
+  "services": {
+    "hero": {
+      "title": "Hizmetlerimiz",
+      "subtitle": "Global Çözüm Ortağınız",
+      "description": "HEFMAC Global olarak, uluslararası ticaret ve üretimde kapsamlı çözümler sunuyoruz"
+    },
+    "main": {
+      "logistics": {
+        "title": "Lojistik Hizmetleri",
+        "description": "Avrupa ve Asya genelinde verimli ve güvenilir lojistik çözümleri sunuyoruz. Kara, hava ve deniz taşımacılığında uzman ekibimizle yanınızdayız.",
+        "features": [
+          "Uluslararası Taşımacılık",
+          "Gümrük İşlemleri",
+          "Depolama Hizmetleri",
+          "Tedarik Zinciri Yönetimi"
+        ]
+      },
+      "mechanical": {
+        "title": "Mekanik Üretim",
+        "description": "Modern üretim tesislerimizde yüksek kaliteli mekanik üretim hizmetleri sağlıyoruz. CNC işleme ve hassas üretim konusunda uzmanız.",
+        "features": [
+          "CNC İşleme",
+          "Hassas Üretim",
+          "Kalite Kontrol",
+          "Prototip Üretimi"
+        ]
+      },
+      "electronic": {
+        "title": "Elektronik Üretim",
+        "description": "Elektronik üretim alanında yenilikçi çözümler sunuyoruz. PCB montajından ürün testine kadar tüm süreçlerde profesyonel hizmet veriyoruz.",
+        "features": [
+          "PCB Montaj",
+          "Elektronik Test",
+          "Kalite Güvence",
+          "Ar-Ge Desteği"
+        ]
+      },
+      "industrial": {
+        "title": "Endüstriyel Çözümler",
+        "description": "Endüstriyel üretim ve otomasyon sistemlerinde kapsamlı çözümler sunuyoruz. Modern teknolojilerle verimliliği artırıyoruz.",
+        "features": [
+          "Otomasyon Sistemleri",
+          "Endüstriyel Ekipman",
+          "Teknik Servis",
+          "Bakım Hizmetleri"
+        ]
+      }
+    },
+    "why": {
+      "title": "Neden Bizi Seçmelisiniz?",
+      "items": [
+        {
+          "title": "Global Ağ",
+          "description": "Dünya genelinde güçlü iş ortaklıkları"
+        },
+        {
+          "title": "Uzman Ekip",
+          "description": "Deneyimli ve profesyonel kadro"
+        },
+        {
+          "title": "7/24 Destek",
+          "description": "Kesintisiz müşteri hizmetleri"
+        },
+        {
+          "title": "Özel Çözümler",
+          "description": "İhtiyaca özel hizmet yaklaşımı"
+        },
+        {
+          "title": "Anlık Takip",
+          "description": "Gerçek zamanlı süreç yönetimi"
+        },
+        {
+          "title": "Maliyet Avantajı",
+          "description": "Rekabetçi ve şeffaf fiyatlandırma"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "İletişim",
+      "subtitle": "Bizimle İletişime Geçin",
+      "description": "Sorularınız ve ihtiyaçlarınız için bizimle iletişime geçebilirsiniz. Size en kısa sürede dönüş yapacağız."
+    },
+    "form": {
+      "title": "Mesaj Gönderin",
+      "firstName": "Ad",
+      "lastName": "Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "sending": "Gönderiliyor...",
+      "success": "Mesajınız başarıyla gönderildi!",
+      "error": "Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin."
+    },
+    "info": {
+      "title": "İletişim Bilgileri",
+      "address": {
+        "title": "Adres",
+        "content": "Ankara, Türkiye"
+      },
+      "phone": {
+        "title": "Telefon",
+        "content": "+90 (212) XXX XX XX"
+      },
+      "email": {
+        "title": "E-posta",
+        "content": "info@hefmacglobal.com"
+      },
+      "workingHours": {
+        "title": "Çalışma Saatleri",
+        "weekdays": "Pazartesi - Cuma: 09:00 - 18:00",
+        "weekend": "Cumartesi - Pazar: Kapalı"
+      }
+    }
   }
 }
