@@ -101,7 +101,7 @@ const Navbar = () => {
         <Toolbar disableGutters sx={{ minHeight: '80px' }}>
           {/* Logo - Desktop */}
           <LogoContainer sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <img src="/src/assets/images/logo.png" alt="HEFMAC Global" />
+            <img src="/images/logo.png" alt="HEFMAC Global" />
           </LogoContainer>
 
           {/* Mobile Menu */}
@@ -148,7 +148,7 @@ const Navbar = () => {
 
           {/* Logo - Mobile */}
           <LogoContainer sx={{ display: { xs: 'flex', md: 'none' }, flexGrow: 1 }}>
-            <img src="/src/assets/images/logo.png" alt="HEFMAC Global" />
+            <img src="/images/logo.png" alt="HEFMAC Global" />
           </LogoContainer>
 
           {/* Desktop Menu */}
