@@ -30,7 +30,7 @@ const StyledFooter = styled(Box)(({ theme }) => ({
   },
 }));
 
-const FooterLink = styled(Link)({
+const FooterLink = styled(Link)(({ theme }) => ({
   color: '#333',
   textDecoration: 'none',
   transition: 'all 0.3s ease',
@@ -40,7 +40,7 @@ const FooterLink = styled(Link)({
     color: '#000',
     transform: 'translateX(5px)',
   },
-});
+})) as typeof Link;
 
 const IconBox = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -75,7 +75,7 @@ const SocialIcon = styled(Box)(({ theme }) => ({
       color: '#e3e3e3',
     },
   },
-}));
+})) as typeof Box;
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -126,7 +126,11 @@ const Footer = () => {
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;
                 return (
-                  <SocialIcon key={index} component="a" href={social.url}>
+                  <SocialIcon
+                    key={index}
+                    component={'a' as any}
+                    href={social.url}
+                  >
                     <Icon />
                   </SocialIcon>
                 );
@@ -142,7 +146,7 @@ const Footer = () => {
             {navigationLinks.map((link) => (
               <FooterLink
                 key={link.path}
-                component={RouterLink}
+                component={RouterLink as any}
                 to={link.path}
               >
                 {link.name}

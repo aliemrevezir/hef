@@ -54,6 +54,12 @@ const IconWrapper = styled(Box)(({ theme }) => ({
   },
 }));
 
+interface ValueItem {
+  icon: React.ComponentType;
+  title: string;
+  description: string;
+}
+
 const About = () => {
   const { t } = useTranslation();
   const [ref, inView] = useInView({
@@ -86,11 +92,11 @@ const About = () => {
     }),
   };
 
-  const values = [
-    { icon: StarIcon, ...t('about.values.quality', { returnObjects: true }) },
-    { icon: SpeedIcon, ...t('about.values.innovation', { returnObjects: true }) },
-    { icon: SecurityIcon, ...t('about.values.reliability', { returnObjects: true }) },
-    { icon: AllInclusiveIcon, ...t('about.values.sustainability', { returnObjects: true }) },
+  const values: ValueItem[] = [
+    { icon: StarIcon, ...t('about.values.quality', { returnObjects: true }) as any },
+    { icon: SpeedIcon, ...t('about.values.innovation', { returnObjects: true }) as any },
+    { icon: SecurityIcon, ...t('about.values.reliability', { returnObjects: true }) as any },
+    { icon: AllInclusiveIcon, ...t('about.values.sustainability', { returnObjects: true }) as any },
   ];
 
   return (

@@ -13,6 +13,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import LanguageIcon from '@mui/icons-material/Language';
 import { styled } from '@mui/material/styles';
+import { Link } from '@mui/material';
 
 // Özel stil tanımlamaları
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
@@ -24,13 +25,15 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
   zIndex: theme.zIndex.drawer + 1,
 }));
 
-const StyledButton = styled(Button)(({ theme }) => ({
+const StyledButton = styled(RouterLink)(({ theme }) => ({
   color: '#333',
   fontSize: '15px',
   fontWeight: 500,
   textTransform: 'none',
   padding: '8px 16px',
   marginLeft: '8px',
+  textDecoration: 'none',
+  display: 'inline-block',
   '&:hover': {
     backgroundColor: 'rgba(0, 0, 0, 0.04)',
     color: theme.palette.primary.main,
@@ -43,7 +46,7 @@ const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
     backgroundColor: 'rgba(0, 0, 0, 0.04)',
     color: theme.palette.primary.main,
   },
-}));
+})) as typeof MenuItem;
 
 const LogoContainer = styled(Box)({
   display: 'flex',
@@ -134,7 +137,7 @@ const Navbar = () => {
                 <StyledMenuItem
                   key={page.path}
                   onClick={handleCloseNavMenu}
-                  component={RouterLink}
+                  component={RouterLink as any}
                   to={page.path}
                 >
                   <Typography textAlign="center">{page.name}</Typography>
@@ -153,7 +156,6 @@ const Navbar = () => {
             {pages.map((page) => (
               <StyledButton
                 key={page.path}
-                component={RouterLink}
                 to={page.path}
                 onClick={handleCloseNavMenu}
               >

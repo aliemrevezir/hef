@@ -68,6 +68,18 @@ const FeatureList = styled(Box)(({ theme }) => ({
   },
 }));
 
+interface ServiceItem {
+  icon: React.ComponentType;
+  title: string;
+  description: string;
+  features: string[];
+}
+
+interface WhyChooseUsItem {
+  title: string;
+  description: string;
+}
+
 const Services = () => {
   const { t } = useTranslation();
   const [ref, inView] = useInView({
@@ -100,14 +112,14 @@ const Services = () => {
     }),
   };
 
-  const services = [
-    { icon: LocalShippingIcon, ...t('services.main.logistics', { returnObjects: true }) },
-    { icon: PrecisionManufacturingIcon, ...t('services.main.mechanical', { returnObjects: true }) },
-    { icon: MemoryIcon, ...t('services.main.electronic', { returnObjects: true }) },
-    { icon: FactoryIcon, ...t('services.main.industrial', { returnObjects: true }) },
+  const services: ServiceItem[] = [
+    { icon: LocalShippingIcon, ...t('services.main.logistics', { returnObjects: true }) as any },
+    { icon: PrecisionManufacturingIcon, ...t('services.main.mechanical', { returnObjects: true }) as any },
+    { icon: MemoryIcon, ...t('services.main.electronic', { returnObjects: true }) as any },
+    { icon: FactoryIcon, ...t('services.main.industrial', { returnObjects: true }) as any },
   ];
 
-  const whyChooseUs = t('services.why.items', { returnObjects: true });
+  const whyChooseUs = t('services.why.items', { returnObjects: true }) as WhyChooseUsItem[];
 
   return (
     <>
