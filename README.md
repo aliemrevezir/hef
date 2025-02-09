@@ -1,50 +1,93 @@
-# React + TypeScript + Vite
+# HEFMAC Global Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern ve profesyonel bir kurumsal website projesi. React, TypeScript ve Vite kullanılarak geliştirilmiştir.
 
-Currently, two official plugins are available:
+## Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌐 Çok dilli destek (TR/EN)
+- 🎨 Modern ve responsive tasarım
+- ⚡ Yüksek performans
+- 📱 Mobil uyumlu
+- 🔍 SEO optimizasyonu
+- 📧 EmailJS entegrasyonu
+- 🎭 Framer Motion animasyonları
+- 🎯 Material-UI bileşenleri
 
-## Expanding the ESLint configuration
+## Teknolojiler
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React 18
+- TypeScript
+- Vite
+- Material-UI
+- i18next
+- Framer Motion
+- EmailJS
+- React Router
+- React Helmet Async
+- Tailwind CSS
 
-- Configure the top-level `parserOptions` property like this:
+## Kurulum
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+# Repoyu klonlayın
+git clone https://github.com/aliemrevezir/hef.git
+
+# Proje dizinine gidin
+cd hef
+
+# Bağımlılıkları yükleyin
+npm install
+
+# Geliştirme sunucusunu başlatın
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Build
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```bash
+# Production build oluşturun
+npm run build
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+# Build'i önizleyin
+npm run preview
 ```
+
+## Proje Yapısı
+
+```
+src/
+├── assets/        # Resimler ve statik dosyalar
+├── components/    # Yeniden kullanılabilir bileşenler
+├── locales/       # Dil dosyaları
+├── pages/         # Sayfa bileşenleri
+├── routes/        # Rota yapılandırması
+├── styles/        # Global stiller
+└── utils/         # Yardımcı fonksiyonlar
+```
+
+## Özellikler ve Sayfalar
+
+- 🏠 Ana Sayfa
+  - Hero section
+  - Hizmetler
+  - Slider
+
+- 👥 Hakkımızda
+  - Misyon & Vizyon
+  - Şirket Değerleri
+  - Kurumsal Bilgiler
+
+- 🛠 Hizmetler
+  - Lojistik
+  - Mekanik Üretim
+  - Elektronik Üretim
+  - Endüstriyel Çözümler
+
+- 📞 İletişim
+  - İletişim Formu
+  - Konum Bilgileri
+  - Çalışma Saatleri
+
+## Lisans
+
+MIT License
