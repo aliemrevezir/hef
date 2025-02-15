@@ -15,9 +15,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // Import hero images
-import hero1 from '../../../assets/images/hero1.jpg';
-import hero2 from '../../../assets/images/hero2.jpg';
-import hero3 from '../../../assets/images/hero3.jpg';
+import hero1 from '../../../assets/images/lojistik_banner.jpg';
+import hero2 from '../../../assets/images/mekanik_banner.png';
+import hero3 from '../../../assets/images/elektronik_banner.png';
 
 const StyledSwiper = styled(Swiper)({
   width: '100%',
@@ -89,22 +89,25 @@ const HeroSection = () => {
 
   const slides = [
     {
-      image: hero2,
+      image: hero1,
       title: t('home.hero.title'),
       subtitle: t('home.hero.subtitle'),
       description: t('home.hero.description'),
+      link: "/services",
     },
     {
-      image: hero1,
+      image: hero2,
       title: t('home.mechanicalProduction.title'),
       subtitle: t('home.mechanicalProduction.subtitle'),
       description: t('home.mechanicalProduction.description'),
+      link:"/mechanical-services",
     },
     {
       image: hero3,
       title: t('home.electronicProduction.title'),
       subtitle: t('home.electronicProduction.subtitle'),
       description: t('home.electronicProduction.description'),
+      link:"/electronical-services",
     },
   ];
 
@@ -185,7 +188,7 @@ const HeroSection = () => {
                       {slide.description}
                     </Typography>
                     <Box sx={{ mt: 4 }}>
-                      <StyledButton variant="contained" href="/services">
+                      <StyledButton variant="contained" href={slide.link}>
                         {t('common.buttons.learnMore')}
                       </StyledButton>
                       <StyledButton href="/contact"

@@ -4,6 +4,8 @@
       "home": "Ana Sayfa",
       "about": "Hakkımızda",
       "services": "Hizmetlerimiz",
+      "mechanicalServices": "Mekanik Hizmetler",
+      "electronicalServices": "Elektronik Hizmetler",
       "contact": "İletişim"
     },
     "buttons": {
@@ -64,24 +66,24 @@
           "description": "Avrupa ve Asya genelinde verimli ve güvenilir lojistik hizmetleri."
         },
         "mechanicalProduction": {
-          "title": "Mekanik Üretim",
+          "title": "Mekanik Üretim ve Endüstriyel İşleme Çözümleri",
           "description": "Endüstriyel mükemmeliyet için gelişmiş üretim çözümleri."
         },
         "electronicProduction": {
-          "title": "Elektronik Üretim",
+          "title": "Elektronik Kart Dizgi ve Üretim Hizmetleri",
           "description": "Elektronik ürünleriniz için son teknoloji."
         }
       }
     },
     "mechanicalProduction": {
-      "title": "Mekanik Üretim",
+      "title": "Mekanik Üretim ve Endüstriyel İşleme Çözümleri",
       "subtitle": "Endüstriyel Mükemmeliyet İçin Gelişmiş Üretim Çözümleri",
-      "description": "HEFMAC Global, CNC işleme, lazer kesim ve endüstriyel üretim gibi yüksek kaliteli mekanik üretim hizmetleri sunarak projeleriniz için hassasiyet ve verimlilik sağlar."
+      "description": "HEFMAC GLOBAL, endüstriyel üretim süreçlerinde yüksek hassasiyet ve kalite standartlarıyla hizmet sunan bir üretim ve tedarik firmasıdır. İş makineleri, otomotiv, savunma sanayi ve beyaz eşya sektörlerine yönelik kompleks mekanik parçaların üretim ve işlenmesini gerçekleştiriyoruz."
     },
     "electronicProduction": {
-      "title": "Elektronik Üretim & Yenilikçi Çözümler",
+      "title": "Elektronik Kart Dizgi ve Üretim Hizmetleri",
       "subtitle": "Elektronik Ürünleriniz İçin Son Teknoloji",
-      "description": "Elektronik üretim hizmetlerimiz, PCB montajı, ürün testi ve kalite güvencesi dahil olmak üzere, teknoloji endüstrisi için güvenilir ve yenilikçi çözümler sunmaktadır."
+      "description": "HEFMAC GLOBAL olarak, elektronik kart üretiminde Class1, Class2 ve Class3 kalite standartlarına uygun, IPC standartlarını temel alan dizgi hizmetlerimizle sektörün en üst düzey gereksinimlerini karşılıyoruz. Hem seri üretim hem de adetli üretim ihtiyaçlarınıza yönelik esnek çözümler sunarak, proje başlangıcından son ürüne kadar tüm süreçleri titizlikle yönetiyoruz."
     }
   },
   "footer": {
@@ -90,13 +92,95 @@
     "address": "Ankara, Türkiye",
     "phone": "Telefon",
     "email": "E-posta",
-    "workingHours": "Çalışma Saatleri",
-    "mondayToFriday": "Pazartesi - Cuma",
-    "saturdayToSunday": "Cumartesi - Pazar",
-    "closed": "Kapalı",
+    "services": {
+      "title": "Hizmetler",
+      "mechanicalServices": "Mekanik Hizmetler",
+      "electronicalServices": "Elektronik Hizmetler"
+    },
     "quickLinks": "Hızlı Bağlantılar"
   },
   "services": {
+    "mechanicalServices": {
+      "cncMachining": {
+        "title": " CNC Dik İşleme & CNC Torna",
+        "description": "Yüksek hassasiyet ve kalite standartlarına uygun CNC işleme hizmetleri",
+        "features": [
+          "3, 4 ve 5 eksenli CNC dik işleme merkezleri ile ±0.01 mm tolerans hassasiyetinde üretim",
+          "Yüksek hızlı CNC torna tezgâhlarında seri üretime uygun metal işleme",
+          "Alüminyum, çelik, paslanmaz çelik, pirinç ve kompozit malzemelerde yüksek doğruluklu talaşlı imalat"
+        ]
+      },
+      "plasticInjection": {
+        "title": " Plastik Enjeksiyon Kalıplama",
+        "description": "Plastik enjeksiyon kalıp tasarımı ve üretimi",
+        "features": [
+          "Yüksek mukavemetli teknik plastiklerin enjeksiyon yöntemiyle üretimi",
+          "Otomotiv ve endüstriyel plastik parçalar için özelleştirilmiş kalıplama çözümleri",
+          "PP, ABS, POM, PC gibi mühendislik plastikleri ile üretim"
+        ]
+      },
+      "laserCutting": {
+        "title": " Lazer Kesim & Sac Büküm",
+        "description": "Yüksek hassasiyetli lazer kesim hizmetleri",
+        "features": [
+          "Fiber lazer teknolojisi ile ±0.05 mm hassasiyetinde metal kesim",
+          "CNC abkant preslerde sac büküm ve şekillendirme işlemleri",
+          "Paslanmaz çelik, alüminyum, galvanizli sac ve diğer metallerde üstün yüzey kalitesi"
+        ]
+      },
+      "specialProduction": {
+        "title": " Özel Mekanik Üretim ve Montaj",
+        "description": "Özel üretim ve prototip geliştirme hizmetleri",
+        "features": [
+          "Özel prototip üretimi ve düşük hacimli seri imalat",
+          "Kaynaklı imalat, yüzey işlemleri (kaplama, boya, anodizasyon vb.)",
+          "Mekanik ve elektromekanik montaj hizmetleri"
+        ]
+      },
+      "subDescription": "Tüm üretim süreçlerimiz ISO 9001 kalite yönetim standartlarına uygun olarak yürütülmekte olup, hassas ölçüm ekipmanları ile kontrol edilmektedir.",
+      "subDescription2":"HEFMAC GLOBAL olarak, mühendislik destekli üretim anlayışımızla projelerinize en uygun çözümleri sunuyoruz. Daha detaylı bilgi ve teklif almak için bizimle iletişime geçin!"
+    },
+    "electronicalServices":{
+      "documentsReqirementAnalysis": {
+        "title": " Doküman ve Gereksinim Analizi",
+        "description": "Elektronik üretim süreci için gerekli doküman ve gereksinim analizi",
+        "features": [
+          "Şematik çizimler, PCB layout dosyaları ve ürün spesifikasyonlarının analiz edilmesi",
+          "Optimum dizgi ve üretim stratejelerinin belirlenmesi",
+          "Üretim maliyetlerinin ve süreçlerinin detaylı analizi"
+        ]
+    },
+    "pcbLayout":{
+      "title": " PCB Layout Tasarımı ve Dizgi Süreci",
+      "description": "Elektronik kart dizgi ve layout tasarım hizmetleri",
+      "features": [
+        "IPC Standartlarına Uyum",
+        "Optimum Bileşen Yerleşimi",
+        "Tasarım doğrulama (Design Rule Check)"
+      ]
+    },
+    "tht":{
+      "title": " THT ve SMD Bileşen Montajı",
+      "description": "Yüzey montaj ve THT bileşen montajı hizmetleri",
+      "features": [
+        "Yüzey montaj teknolojisine uygun bileşen dizgisi ile, kompakt tasarım ve yüksek yoğunluklu yerleşim stratejileri kullanılarak üretim verimliliği maksimize edilmektedir.",
+        "Geleneksel THT bileşenlerin yerleştirilmesinde yüksek hassasiyet ve optimizasyon sağlanarak, sağlam ve güvenilir lehim bağlantıları oluşturulmaktadır.",
+        "Conformal Coating Uygulamaları"
+      ]
+    },
+    "prodProcess":{
+      "title":" Üretim Süreç Yönetimi",
+      "description":"İhtiyaçlarınıza yönelik, esnek üretim hatlarımız sayesinde hem yüksek hacimli seri üretim hem de düşük adetli özel üretim çözümleri sunmaktayız.",
+      "features": [
+        "Seri Üretim ve Adetli Üretim ",
+        "Sınıf 1, Sınıf 2, Sınıf 3 Kalite Standartları",
+        "Uluslararası standartlara uygun üretim ve test süreçleri"
+      ]
+    },
+    "subDescription": "HEFMAC GLOBAL olarak, elektronik kart dizgi sürecinde mühendislik ve inovasyonu birleştirerek, projelerinizin en yüksek kalite ve performans standartlarında hayata geçirilmesini sağlamaktayız.",
+    "subDescription2":"Projeleriniz ve teknik gereksinimleriniz hakkında daha fazla bilgi almak için bizimle iletişime geçebilirsiniz."
+    
+  },
     "hero": {
       "title": "Hizmetlerimiz",
       "subtitle": "Global Çözüm Ortağınız",
@@ -114,33 +198,23 @@
         ]
       },
       "mechanical": {
-        "title": "Mekanik Üretim",
-        "description": "Modern üretim tesislerimizde yüksek kaliteli mekanik üretim hizmetleri sağlıyoruz. CNC işleme ve hassas üretim konusunda uzmanız.",
+        "title": "Mekanik Üretim ve Endüstriyel İşleme Çözümleri",
+        "description": "İş makineleri, otomotiv, savunma sanayi ve beyaz eşya sektörlerine yönelik kompleks mekanik parçaların üretim ve işlenmesini gerçekleştiriyoruz.",
         "features": [
-          "CNC İşleme",
-          "Hassas Üretim",
-          "Kalite Kontrol",
-          "Prototip Üretimi"
+          "CNC Dik İşleme & CNC Torna",
+          "Plastik Enjeksiyon Kalıplama",
+          "Lazer Kesim & Sac Büküm",
+          "Özel Mekanik Üretim ve Montaj" 
         ]
       },
       "electronic": {
-        "title": "Elektronik Üretim",
+        "title": "Elektronik Kart Dizgi ve Üretim Hizmetleri",
         "description": "Elektronik üretim alanında yenilikçi çözümler sunuyoruz. PCB montajından ürün testine kadar tüm süreçlerde profesyonel hizmet veriyoruz.",
         "features": [
-          "PCB Montaj",
-          "Elektronik Test",
-          "Kalite Güvence",
-          "Ar-Ge Desteği"
-        ]
-      },
-      "industrial": {
-        "title": "Endüstriyel Çözümler",
-        "description": "Endüstriyel üretim ve otomasyon sistemlerinde kapsamlı çözümler sunuyoruz. Modern teknolojilerle verimliliği artırıyoruz.",
-        "features": [
-          "Otomasyon Sistemleri",
-          "Endüstriyel Ekipman",
-          "Teknik Servis",
-          "Bakım Hizmetleri"
+          "Dökümantasyon ve Gereksinim Analizi",
+          "PCB Layout Tasarımı ve Dizgi Süreci",
+          "THT ve SMD Bileşen Montajı",
+          "Üretim Süreç Yönetimi"
         ]
       }
     },
@@ -200,17 +274,13 @@
       },
       "phone": {
         "title": "Telefon",
-        "content": "+90 (212) XXX XX XX"
+        "content": ""
       },
       "email": {
         "title": "E-posta",
         "content": "info@hefmacglobal.com"
-      },
-      "workingHours": {
-        "title": "Çalışma Saatleri",
-        "weekdays": "Pazartesi - Cuma: 09:00 - 18:00",
-        "weekend": "Cumartesi - Pazar: Kapalı"
       }
+      
     }
   }
 }

@@ -9,11 +9,11 @@ import CardContent from '@mui/material/CardContent';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { styled, alpha } from '@mui/material/styles';
-import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
 import MemoryIcon from '@mui/icons-material/Memory';
+import FactoryIcon from '@mui/icons-material/Factory';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-
+import ArticleIcon from '@mui/icons-material/Article';
 const StyledCard = styled(Card)(({ theme }) => ({
   height: '100%',
   backgroundColor: '#fff',
@@ -112,9 +112,11 @@ const Services = () => {
   };
 
   const services: ServiceItem[] = [
-    { icon: LocalShippingIcon, ...t('services.main.logistics', { returnObjects: true }) as any },
-    { icon: PrecisionManufacturingIcon, ...t('services.main.mechanical', { returnObjects: true }) as any },
-    { icon: MemoryIcon, ...t('services.main.electronic', { returnObjects: true }) as any }  ];
+    { icon: ArticleIcon, ...t('services.electronicalServices.documentsReqirementAnalysis', { returnObjects: true }) as any },
+    { icon: PrecisionManufacturingIcon, ...t('services.electronicalServices.pcbLayout', { returnObjects: true }) as any },
+    { icon: MemoryIcon, ...t('services.electronicalServices.tht', { returnObjects: true }) as any },
+    { icon: FactoryIcon, ...t('services.electronicalServices.prodProcess', { returnObjects: true }) as any },
+  ];
 
   const whyChooseUs = t('services.why.items', { returnObjects: true }) as WhyChooseUsItem[];
 

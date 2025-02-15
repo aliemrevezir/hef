@@ -2,8 +2,10 @@
   "common": {
     "navigation": {
       "home": "Home",
-      "about": "About",
-      "services": "Services",
+      "about": "About Us",
+      "services": "Our Services",
+      "mechanicalServices": "Mechanical Services",
+      "electronicalServices": "Electronic Services",
       "contact": "Contact"
     },
     "buttons": {
@@ -16,28 +18,28 @@
   "about": {
     "mission": {
       "title": "Our Mission",
-      "description": "To contribute to our customers' global success by providing reliable, innovative, and sustainable solutions in international trade."
+      "description": "To contribute to our clients' global success by providing reliable, innovative, and sustainable solutions in international trade."
     },
     "vision": {
       "title": "Our Vision",
-      "description": "To become a leading, trusted, and preferred business partner in global trade and manufacturing."
+      "description": "To be a leading, reliable, and preferred business partner in global trade and manufacturing."
     },
     "content": {
       "title": "About Us",
-      "mainText": "At Hefmac Global, we operate with a strong vision in international trade. Through our comprehensive services, we aim to be your solution partner in a wide range of areas from automotive and construction machinery spare parts to mechanical production, machining, and laser cutting. Additionally, we offer quality solutions for many industry needs with our plastic mold and injection services.",
-      "secondaryText": "Our company creates competitive advantages in the global market by guaranteeing the highest quality, efficiency, and timely delivery to our customers. With our professional services in logistics and customs clearance processes, we ensure the safe delivery of your products at every stage.",
-      "thirdText": "As an organization that grows and strengthens every day in parallel with developing technology and market needs, we aim to provide quality products and services to our customers worldwide. With our innovative approach and strong business network, we aim to achieve the best results by overcoming the challenges of international trade.",
-      "conclusion": "As Hefmac Global, with our customer-focused working principle, we aim to be one of the most reliable and sustainable business partners in our industry."
+      "mainText": "At Hefmac Global, we operate with a strong vision in international trade. Through our comprehensive services, we aim to be your solution partner across a wide range of needs, from automotive and industrial machinery spare parts to mechanical production, machining, and laser cutting. Additionally, our plastic mold and injection services provide high-quality solutions for various industry needs.",
+      "secondaryText": "Our company guarantees the highest quality, efficiency, and timely delivery to create competitive advantages in the global market. With our professional logistics and customs services, we ensure the safe delivery of your products at every stage.",
+      "thirdText": "Aligned with the evolving technology and market demands, we continue to grow and strengthen as an organization, aiming to provide high-quality products and services to our global customers. Through our innovative approach and strong network, we aim to overcome the challenges of international trade and consistently achieve the best results.",
+      "conclusion": "At Hefmac Global, we strive to be one of the most reliable and sustainable business partners in our sector with our customer-oriented approach."
     },
     "values": {
       "title": "Our Values",
       "quality": {
         "title": "Quality",
-        "description": "Providing service at the highest quality standards"
+        "description": "Providing services at the highest quality standards"
       },
       "innovation": {
         "title": "Innovation",
-        "description": "Following continuous development and technological innovations"
+        "description": "Continuous development and embracing technological innovations"
       },
       "reliability": {
         "title": "Reliability",
@@ -53,94 +55,165 @@
     "hero": {
       "title": "HEFMAC Global Logistics",
       "subtitle": "Fast, Reliable, and Cost-Effective Logistics Services Worldwide",
-      "description": "HEFMAC Global offers end-to-end logistics solutions, including international transportation, customs clearance, and supply chain management. Trust our expertise for seamless global trade."
+      "description": "HEFMAC Global provides end-to-end logistics solutions, including international transportation, customs procedures, and supply chain management. Trust our expertise for seamless global trade."
     },
     "services": {
       "title": "Comprehensive Logistics Services Tailored to Your Needs",
-      "description": "From international freight forwarding to warehousing and distribution, we provide customized logistics solutions to optimize your supply chain and reduce costs.",
+      "description": "We offer customized logistics solutions to optimize your supply chain and reduce costs, from international freight transport to warehousing and distribution services.",
       "cards": {
         "logistic": {
-          "title": "Logistic",
-          "description": "Efficient and reliable road transportation services across Europe and Asia."
+          "title": "Logistics",
+          "description": "Efficient and reliable logistics services across Europe and Asia."
         },
         "mechanicalProduction": {
-          "title": "Mechanical Production",
-          "description": "Advanced manufacturing solutions for industrial excellence."
+          "title": "Mechanical Production and Industrial Processing Solutions",
+          "description": "Advanced production solutions for industrial excellence."
         },
         "electronicProduction": {
-          "title": "Electronic Production",
-          "description": "Advanced manufacturing solutions for industrial excellence."
+          "title": "Electronic Board Assembly and Manufacturing Services",
+          "description": "State-of-the-art technology for your electronic products."
         }
       }
     },
     "mechanicalProduction": {
-      "title": "Mechanical Production",
-      "subtitle": "Advanced Manufacturing Solutions for Industrial Excellence",
-      "description": "HEFMAC Global delivers high-quality mechanical production services, including CNC machining, laser cutting, and industrial manufacturing, ensuring precision and efficiency for your projects."
+      "title": "Mechanical Production and Industrial Processing Solutions",
+      "subtitle": "Advanced Production Solutions for Industrial Excellence",
+      "description": "HEFMAC GLOBAL is a manufacturing and supply company that provides services with high precision and quality standards in industrial production processes. We manufacture and process complex mechanical parts for the construction, automotive, defense, and white goods sectors."
     },
     "electronicProduction": {
-      "title": "Electronic Manufacturing & Innovative Solutions",
-      "subtitle": "Cutting-Edge Technology for Your Electronic Products",
-      "description": "Our electronic production services include PCB assembly, product testing, and quality assurance, providing reliable and innovative solutions for the tech industry."
+      "title": "Electronic Board Assembly and Manufacturing Services",
+      "subtitle": "State-of-the-Art Technology for Your Electronic Products",
+      "description": "At HEFMAC GLOBAL, we meet the industry's highest standards with our IPC-standard-based assembly services for electronic board production. We offer flexible solutions for both mass production and small-batch needs, managing all processes from project initiation to final product with precision."
     }
   },
   "footer": {
     "company": "HEFMAC Global",
-    "rights": "All rights reserved",
+    "rights": "All Rights Reserved",
     "address": "Ankara, Turkey",
     "phone": "Phone",
     "email": "Email",
-    "workingHours": "Working Hours",
-    "mondayToFriday": "Monday - Friday",
-    "saturdayToSunday": "Saturday - Sunday",
-    "closed": "Closed",
+    "services":{
+      "title":"Services",
+      "mechanicalServices":"Mechanical Services",
+      "electronicalServices":"Electronic Services"
+    },
     "quickLinks": "Quick Links"
   },
   "services": {
+    "mechanicalServices": {
+      "cncMachining": {
+        "title": "CNC Vertical Machining & CNC Turning",
+        "description": "CNC machining services with high precision and quality standards",
+        "features": [
+          "Production with ±0.01 mm tolerance on 3, 4, and 5-axis CNC vertical machining centers",
+          "High-speed CNC turning for mass production metal processing",
+          "High-precision machining with aluminum, steel, stainless steel, brass, and composite materials"
+        ]
+      },
+      "plasticInjection": {
+        "title": "Plastic Injection Molding",
+        "description": "Plastic injection mold design and production",
+        "features": [
+          "Injection molding of high-strength technical plastics",
+          "Customized molding solutions for automotive and industrial plastic parts",
+          "Production with engineering plastics such as PP, ABS, POM, PC"
+        ]
+      },
+      "laserCutting": {
+        "title": "Laser Cutting & Sheet Metal Bending",
+        "description": "High-precision laser cutting services",
+        "features": [
+          "Fiber laser technology for metal cutting with ±0.05 mm precision",
+          "Sheet metal bending and forming operations with CNC press brakes",
+          "Superior surface quality with stainless steel, aluminum, galvanized steel, and other metals"
+        ]
+      },
+      "specialProduction": {
+        "title": "Special Mechanical Production and Assembly",
+        "description": "Custom production and prototype development services",
+        "features": [
+          "Custom prototype production and low-volume series manufacturing",
+          "Welded manufacturing, surface treatments (coating, painting, anodizing, etc.)",
+          "Mechanical and electromechanical assembly services"
+        ]
+      },
+      "subDescription": "All our production processes are carried out in compliance with ISO 9001 quality management standards and are controlled with precise measurement equipment.",
+      "subDescription2": "At HEFMAC GLOBAL, we provide the best solutions for your projects with our engineering-supported production approach. Contact us for more detailed information and quotes!"
+    },
+    "electronicalServices": {
+      "documentsReqirementAnalysis": {
+        "title": "Documentation and Requirements Analysis",
+        "description": "Analysis of the necessary documentation and requirements for electronic production",
+        "features": [
+          "Analysis of schematic drawings, PCB layout files, and product specifications",
+          "Determination of optimal assembly and production strategies",
+          "Detailed analysis of production costs and processes"
+        ]
+      },
+      "pcbLayout": {
+        "title": "PCB Layout Design and Assembly Process",
+        "description": "Electronic board assembly and layout design services",
+        "features": [
+          "Compliance with IPC standards",
+          "Optimal component placement",
+          "Design rule check for design validation"
+        ]
+      },
+      "tht": {
+        "title": "THT and SMD Component Assembly",
+        "description": "Surface mount and THT component assembly services",
+        "features": [
+          "Using surface mount technology for component placement, maximizing production efficiency with compact design and high-density placement strategies",
+          "Providing high precision and optimization for traditional THT components to create reliable solder joints",
+          "Conformal coating applications"
+        ]
+      },
+      "prodProcess": {
+        "title": "Production Process Management",
+        "description": "Offering flexible production lines for both high-volume and low-volume custom production solutions",
+        "features": [
+          "Mass production and small-batch production",
+          "Class 1, Class 2, Class 3 quality standards",
+          "International standard production and testing processes"
+        ]
+      },
+      "subDescription": "At HEFMAC GLOBAL, we combine engineering and innovation in the electronic board assembly process to ensure the highest quality and performance standards for your projects.",
+      "subDescription2": "You can contact us for more information about your projects and technical requirements."
+    },
     "hero": {
       "title": "Our Services",
       "subtitle": "Your Global Solution Partner",
-      "description": "At HEFMAC Global, we provide comprehensive solutions in international trade and manufacturing"
+      "description": "At HEFMAC Global, we provide comprehensive solutions for international trade and manufacturing."
     },
     "main": {
       "logistics": {
         "title": "Logistics Services",
-        "description": "We offer efficient and reliable logistics solutions across Europe and Asia. Our expert team is at your service for land, air, and sea transportation.",
+        "description": "We offer efficient and reliable logistics solutions across Europe and Asia. Our expert team is here for road, air, and sea transportation.",
         "features": [
-          "International Transportation",
-          "Customs Operations",
+          "International Shipping",
+          "Customs Procedures",
           "Warehousing Services",
           "Supply Chain Management"
         ]
       },
       "mechanical": {
-        "title": "Mechanical Production",
-        "description": "We provide high-quality mechanical production services in our modern manufacturing facilities. We specialize in CNC machining and precision manufacturing.",
+        "title": "Mechanical Production and Industrial Processing Solutions",
+        "description": "We manufacture and process complex mechanical parts for the construction, automotive, defense, and white goods industries.",
         "features": [
-          "CNC Machining",
-          "Precision Manufacturing",
-          "Quality Control",
-          "Prototype Production"
+          "CNC Vertical Machining & CNC Turning",
+          "Plastic Injection Molding",
+          "Laser Cutting & Sheet Metal Bending",
+          "Special Mechanical Production and Assembly"
         ]
       },
       "electronic": {
-        "title": "Electronic Production",
-        "description": "We offer innovative solutions in electronic production. We provide professional service in all processes from PCB assembly to product testing.",
+        "title": "Electronic Board Assembly and Manufacturing Services",
+        "description": "We offer innovative solutions in the field of electronics manufacturing, providing professional services throughout all processes from PCB assembly to product testing.",
         "features": [
-          "PCB Assembly",
-          "Electronic Testing",
-          "Quality Assurance",
-          "R&D Support"
-        ]
-      },
-      "industrial": {
-        "title": "Industrial Solutions",
-        "description": "We provide comprehensive solutions in industrial production and automation systems. We increase efficiency with modern technologies.",
-        "features": [
-          "Automation Systems",
-          "Industrial Equipment",
-          "Technical Service",
-          "Maintenance Services"
+          "Documentation and Requirements Analysis",
+          "PCB Layout Design and Assembly Process",
+          "THT and SMD Component Assembly",
+          "Production Process Management"
         ]
       }
     },
@@ -157,14 +230,14 @@
         },
         {
           "title": "24/7 Support",
-          "description": "Continuous customer service"
+          "description": "Uninterrupted customer service"
         },
         {
           "title": "Custom Solutions",
-          "description": "Tailored service approach"
+          "description": "Service approach tailored to needs"
         },
         {
-          "title": "Real-time Tracking",
+          "title": "Real-Time Tracking",
           "description": "Real-time process management"
         },
         {
@@ -177,11 +250,11 @@
   "contact": {
     "hero": {
       "title": "Contact",
-      "subtitle": "Get in Touch",
-      "description": "Contact us for your questions and needs. We will get back to you as soon as possible."
+      "subtitle": "Get in Touch with Us",
+      "description": "Feel free to contact us with your questions and needs. We will respond to you as soon as possible."
     },
     "form": {
-      "title": "Send Message",
+      "title": "Send a Message",
       "firstName": "First Name",
       "lastName": "Last Name",
       "email": "Email",
@@ -190,7 +263,7 @@
       "message": "Message",
       "sending": "Sending...",
       "success": "Your message has been sent successfully!",
-      "error": "Error sending message. Please try again."
+      "error": "An error occurred while sending the message. Please try again."
     },
     "info": {
       "title": "Contact Information",
@@ -200,17 +273,12 @@
       },
       "phone": {
         "title": "Phone",
-        "content": "+90 (212) XXX XX XX"
+        "content": ""
       },
       "email": {
         "title": "Email",
         "content": "info@hefmacglobal.com"
-      },
-      "workingHours": {
-        "title": "Working Hours",
-        "weekdays": "Monday - Friday: 09:00 - 18:00",
-        "weekend": "Saturday - Sunday: Closed"
       }
     }
   }
-} 
+}

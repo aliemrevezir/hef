@@ -13,7 +13,6 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import LanguageIcon from '@mui/icons-material/Language';
 import { styled } from '@mui/material/styles';
-import { Link } from '@mui/material';
 
 // Özel stil tanımlamaları
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
@@ -61,17 +60,23 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElLang, setAnchorElLang] = useState<null | HTMLElement>(null);
+  const [anchorElServices, setAnchorElServices] = useState<null | HTMLElement>(null);
 
   const pages = [
     { name: t('common.navigation.home'), path: '/' },
     { name: t('common.navigation.about'), path: '/about' },
-    { name: t('common.navigation.services'), path: '/services' },
     { name: t('common.navigation.contact'), path: '/contact' },
+  ];
+
+  const servicePages = [
+    { name: t('common.navigation.mechanicalServices'), path: '/mechanical-services' },
+    { name: t('common.navigation.electronicalServices'), path: '/electronical-services' },
   ];
 
   const languages = [
     { code: 'tr', name: 'Türkçe' },
     { code: 'en', name: 'English' },
+    { code: 'ru', name: 'Russian' },
   ];
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -82,12 +87,20 @@ const Navbar = () => {
     setAnchorElLang(event.currentTarget);
   };
 
+  const handleOpenServicesMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElServices(event.currentTarget);
+  };
+
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
   const handleCloseLangMenu = () => {
     setAnchorElLang(null);
+  };
+
+  const handleCloseServicesMenu = () => {
+    setAnchorElServices(null);
   };
 
   const changeLanguage = (lng: string) => {
@@ -115,6 +128,7 @@ const Navbar = () => {
             >
               <MenuIcon />
             </IconButton>
+            {/* Mobile Menu Items */}
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -133,7 +147,8 @@ const Navbar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {/* Home and About */}
+              {pages.slice(0, 2).map((page) => (
                 <StyledMenuItem
                   key={page.path}
                   onClick={handleCloseNavMenu}
@@ -143,6 +158,41 @@ const Navbar = () => {
                   <Typography textAlign="center">{page.name}</Typography>
                 </StyledMenuItem>
               ))}
+              
+              {/* Services Section */}
+              <StyledMenuItem
+                onClick={(e) => e.preventDefault()}
+                sx={{ 
+                  backgroundColor: 'rgba(0, 0, 0, 0.02)',
+                  '&:hover': {
+                    backgroundColor: 'rgba(0, 0, 0, 0.02)',
+                  }
+                }}
+              >
+                <Typography textAlign="center" fontWeight="500">
+                  {t('common.navigation.services')}
+                </Typography>
+              </StyledMenuItem>
+              {servicePages.map((service) => (
+                <StyledMenuItem
+                  key={service.path}
+                  onClick={handleCloseNavMenu}
+                  component={RouterLink as any}
+                  to={service.path}
+                  sx={{ pl: 4 }}
+                >
+                  <Typography textAlign="center">{service.name}</Typography>
+                </StyledMenuItem>
+              ))}
+
+              {/* Contact */}
+              <StyledMenuItem
+                onClick={handleCloseNavMenu}
+                component={RouterLink as any}
+                to={pages[2].path}
+              >
+                <Typography textAlign="center">{pages[2].name}</Typography>
+              </StyledMenuItem>
             </Menu>
           </Box>
 
@@ -153,7 +203,8 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
-            {pages.map((page) => (
+            {/* Home and About links */}
+            {pages.slice(0, 2).map((page) => (
               <StyledButton
                 key={page.path}
                 to={page.path}
@@ -162,6 +213,85 @@ const Navbar = () => {
                 {page.name}
               </StyledButton>
             ))}
+            
+            {/* Services Dropdown */}
+            <Box
+              onMouseEnter={handleOpenServicesMenu}
+              onMouseLeave={handleCloseServicesMenu}
+              sx={{ 
+                display: 'inline-flex',
+                position: 'relative',
+                alignItems: 'center' 
+              }}
+            >
+              <StyledButton
+                to="/services"
+                sx={{
+                  '&:hover': {
+                    backgroundColor: 'rgba(0, 0, 0, 0.04)',
+                  },
+                  '&::after': {
+                    content: '""',
+                    display: Boolean(anchorElServices) ? 'block' : 'none',
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 8,
+                    right: 8,
+                    height: '2px',
+                    backgroundColor: 'primary.main',
+                  }
+                }}
+              >
+                {t('common.navigation.services')}
+              </StyledButton>
+              <Menu
+                id="services-menu"
+                anchorEl={anchorElServices}
+                open={Boolean(anchorElServices)}
+                onClose={handleCloseServicesMenu}
+                MenuListProps={{
+                  onMouseLeave: handleCloseServicesMenu,
+                  sx: { py: 0 }
+                }}
+                PaperProps={{
+                  elevation: 3,
+                  sx: {
+                    mt: 1,
+                    minWidth: 200,
+                    '& .MuiMenuItem-root': {
+                      py: 1.5
+                    }
+                  }
+                }}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+              >
+                {servicePages.map((service) => (
+                  <StyledMenuItem
+                    key={service.path}
+                    onClick={handleCloseServicesMenu}
+                    component={RouterLink as any}
+                    to={service.path}
+                  >
+                    <Typography textAlign="center">{service.name}</Typography>
+                  </StyledMenuItem>
+                ))}
+              </Menu>
+            </Box>
+
+            {/* Contact link */}
+            <StyledButton
+              to={pages[2].path}
+              onClick={handleCloseNavMenu}
+            >
+              {pages[2].name}
+            </StyledButton>
           </Box>
 
           {/* Language Switcher */}
@@ -202,4 +332,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

@@ -168,32 +168,25 @@ const Footer = () => {
             ))}
           </Grid>
 
-          {/* Working Hours */}
+          {/* Services */}
           <Grid item xs={12} md={4}>
             <Typography variant="h6" sx={{ fontWeight: 600, mb: 3 }}>
-              {t('footer.workingHours')}
+              {t('footer.services.title')}
             </Typography>
-            <Box sx={{ 
-              p: 3, 
-              bgcolor: alpha('#fff', 0.5), 
-              borderRadius: 2,
-              border: '1px solid',
-              borderColor: alpha('#333', 0.1),
-            }}>
-              <Typography variant="body1" sx={{ mb: 2 }}>
-                {t('footer.mondayToFriday')}
-                <Typography component="span" sx={{ float: 'right', fontWeight: 600 }}>
-                  09:00 - 18:00
-                </Typography>
-              </Typography>
-              <Typography variant="body1">
-                {t('footer.saturdayToSunday')}
-                <Typography component="span" sx={{ float: 'right', fontWeight: 600 }}>
-                  {t('footer.closed')}
-                </Typography>
-              </Typography>
-            </Box>
+            <FooterLink
+              component={RouterLink as any}
+              to="/mechanical-services"
+            >
+              {t('footer.services.mechanicalServices')}
+            </FooterLink>
+            <FooterLink
+              component={RouterLink as any}
+              to="/electronical-services"
+            >
+              {t('footer.services.electronicalServices')}
+            </FooterLink>
           </Grid>
+          
         </Grid>
 
         {/* Copyright */}
@@ -223,4 +216,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;

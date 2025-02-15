@@ -7,6 +7,8 @@ import Box from '@mui/material/Box';
 const Home = lazy(() => import('../pages/Home'));
 const About = lazy(() => import('../pages/About'));
 const Services = lazy(() => import('../pages/Services'));
+const MechanicalServices = lazy(() => import('../pages/MechanicalServices'));
+const ElectronicalServices = lazy(() => import('../pages/ElectronicalServices'));
 const Contact = lazy(() => import('../pages/Contact'));
 
 const LoadingFallback = () => (
@@ -22,6 +24,8 @@ const AppRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/mechanical-services" element={<MechanicalServices />} />
+        <Route path="/electronical-services" element={<ElectronicalServices />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Suspense>

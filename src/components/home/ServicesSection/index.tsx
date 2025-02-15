@@ -111,18 +111,21 @@ const ServicesSection = () => {
       title: t('home.services.cards.logistic.title'),
       description: t('home.services.cards.logistic.description'),
       image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2340&auto=format&fit=crop',
+      link: "/services"
     },
     {
       icon: PrecisionManufacturingIcon,
       title: t('home.services.cards.mechanicalProduction.title'),
       description: t('home.services.cards.mechanicalProduction.description'),
-      image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=2340&auto=format&fit=crop',
+      image: 'images/mekanik-uretim.jpg',
+      link: "/mechanical-services"
     },
     {
       icon: CableIcon,
       title: t('home.services.cards.electronicProduction.title'),
       description: t('home.services.cards.electronicProduction.description'),
       image: 'https://images.unsplash.com/photo-1580983218765-f663bec07b37?q=80&w=2340&auto=format&fit=crop',
+      link: "/electronical-services"
     }
   ];
 
@@ -241,16 +244,16 @@ const ServicesSection = () => {
                         <Typography
                           variant="body1"
                           sx={{
-                            mb: 4,
-                            color: 'text.secondary',
-                            fontSize: '1.1rem',
-                            lineHeight: 1.6,
+                          mb: 4,
+                          color: 'text.secondary',
+                          fontSize: '1.1rem',
+                          lineHeight: 1.6,
                           }}
                         >
                           {service.description}
                         </Typography>
                         <StyledButton
-                          onClick={() => navigate('/services')}
+                          onClick={() => navigate(service.link)}
                           endIcon={<ArrowForwardIcon />}
                         >
                           {t('common.buttons.readMore')}
