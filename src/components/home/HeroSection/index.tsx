@@ -15,9 +15,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // Import hero images
-import hero1 from '../../../assets/images/lojistik_banner.jpg';
-import hero2 from '../../../assets/images/mekanik_banner.png';
-import hero3 from '../../../assets/images/elektronik_banner.png';
+import hero1 from '../../../assets/images/imagesOptimized/lojistik_banner.webp';
+import hero2 from '../../../assets/images/imagesOptimized/mekanik_banner.webp';
+import hero3 from '../../../assets/images/imagesOptimized/elektronik_banner.webp';
 
 const StyledSwiper = styled(Swiper)({
   width: '100%',
@@ -26,16 +26,35 @@ const StyledSwiper = styled(Swiper)({
     position: 'relative',
   },
   '& .swiper-pagination-bullet': {
-    backgroundColor: '#e3e3e3',
-    opacity: 0.7,
+    width: '12px',
+    height: '12px',
+    backgroundColor: '#fff',
+    opacity: 0.5,
+    transition: 'all 0.3s ease',
     '&-active': {
       opacity: 1,
+      transform: 'scale(1.2)',
+      backgroundColor: '#e3e3e3',
     },
   },
   '& .swiper-button-prev, & .swiper-button-next': {
-    color: '#e3e3e3',
+    color: '#fff',
+    background: 'rgba(255, 255, 255, 0.2)',
+    backdropFilter: 'blur(8px)',
+    width: '48px',
+    height: '48px',
+    borderRadius: '50%',
+    border: '2px solid rgba(255, 255, 255, 0.3)',
+    transition: 'all 0.3s ease',
+    '&:after': {
+      fontSize: '24px',
+    },
     '&:hover': {
-      color: '#fff',
+      background: 'rgba(255, 255, 255, 0.3)',
+      transform: 'scale(1.1)',
+    },
+    '&:active': {
+      transform: 'scale(0.95)',
     },
   },
 });
@@ -46,10 +65,11 @@ const SlideContent = styled(Box)({
   left: 0,
   right: 0,
   bottom: 0,
-  background: 'linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%)',
+  background: 'linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%)',
   display: 'flex',
   alignItems: 'center',
   color: '#fff',
+  transition: 'all 0.5s ease',
 });
 
 const ContentWrapper = styled(Box)({
@@ -111,41 +131,47 @@ const HeroSection = () => {
     },
   ];
 
-  const contentVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: 'easeOut',
-      },
-    },
-  };
-
   return (
     <Box sx={{ position: 'relative' }}>
       <StyledSwiper
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
         effect="fade"
         navigation
-        pagination={{ clickable: true }}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
+        pagination={{ 
+          clickable: true,
+          dynamicBullets: true,
         }}
+        autoplay={{
+          delay: 6000, // Increased from 5000 to 6000
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        speed={1000} // Increased from default
         loop
+        fadeEffect={{
+          crossFade: true
+        }}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <SlideImage src={slide.image} alt={slide.title} />
+            <motion.div
+              initial={{ scale: 1.1 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 6, ease: 'easeOut' }}
+            >
+              <SlideImage src={slide.image} alt={slide.title} />
+            </motion.div>
             <SlideContent>
               <Container maxWidth="lg">
                 <ContentWrapper>
                   <motion.div
-                    initial="hidden"
-                    animate="visible"
-                    variants={contentVariants}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.3,
+                      ease: [0.215, 0.61, 0.355, 1],
+                    }}
                   >
                     <Typography
                       variant="h1"
@@ -218,4 +244,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection; 
+export default HeroSection;

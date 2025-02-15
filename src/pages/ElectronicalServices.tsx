@@ -14,6 +14,12 @@ import MemoryIcon from '@mui/icons-material/Memory';
 import FactoryIcon from '@mui/icons-material/Factory';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ArticleIcon from '@mui/icons-material/Article';
+import ImageSlider from '../components/ImageSlider';
+import hero1 from '../assets/images/imagesOptimized/elektronik-hero-1.webp';
+import hero2 from '../assets/images/imagesOptimized/elektronik-hero-2.webp';
+import hero3 from '../assets/images/imagesOptimized/elektronik-hero-3.webp';
+import hero4 from '../assets/images/imagesOptimized/elektronik-hero-4.webp';
+
 const StyledCard = styled(Card)(({ theme }) => ({
   height: '100%',
   backgroundColor: '#fff',
@@ -120,6 +126,13 @@ const Services = () => {
 
   const whyChooseUs = t('services.why.items', { returnObjects: true }) as WhyChooseUsItem[];
 
+  const sliderImages = [
+    hero1,
+    hero2,
+    hero3,
+    hero4,
+  ];
+
   return (
     <>
       <Helmet>
@@ -191,6 +204,11 @@ const Services = () => {
               {t('services.hero.description')}
             </Typography>
           </motion.div>
+          
+          {/* Add Image Slider */}
+          <Box sx={{ mt: 6 }}>
+            <ImageSlider images={sliderImages} />
+          </Box>
         </Container>
       </Box>
 

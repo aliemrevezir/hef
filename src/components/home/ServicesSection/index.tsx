@@ -15,7 +15,7 @@ import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CableIcon from '@mui/icons-material/Cable';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
-
+import mekanik from '../../../assets/images/imagesOptimized/mekanik-uretim.webp';
 const StyledCard = styled(Card)(({ theme }) => ({
   height: '100%',
   display: 'flex',
@@ -117,7 +117,7 @@ const ServicesSection = () => {
       icon: PrecisionManufacturingIcon,
       title: t('home.services.cards.mechanicalProduction.title'),
       description: t('home.services.cards.mechanicalProduction.description'),
-      image: 'images/mekanik-uretim.jpg',
+      image: mekanik,
       link: "/mechanical-services"
     },
     {

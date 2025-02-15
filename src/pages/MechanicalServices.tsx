@@ -14,6 +14,15 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import VerticalAlignBottomIcon from '@mui/icons-material/VerticalAlignBottom';
 import VaccinesIcon from '@mui/icons-material/Vaccines';
 import FlashOnIcon from '@mui/icons-material/FlashOn';
+import ImageSlider from '../components/ImageSlider';
+
+import hero1 from '../assets/images/imagesOptimized/mekanik-hero-1.webp';
+import hero2 from '../assets/images/imagesOptimized/mekanik-hero-2.webp';
+import hero3 from '../assets/images/imagesOptimized/mekanik-hero-3.webp';
+import hero4 from '../assets/images/imagesOptimized/mekanik-hero-4.webp';
+import hero5 from '../assets/images/imagesOptimized/mekanik-hero-5.webp';
+import hero6 from '../assets/images/imagesOptimized/mekanik-hero-6.webp';
+
 const StyledCard = styled(Card)(({ theme }) => ({
   height: '100%',
   backgroundColor: '#fff',
@@ -120,6 +129,15 @@ const Services = () => {
 
   const whyChooseUs = t('services.why.items', { returnObjects: true }) as WhyChooseUsItem[];
 
+  const sliderImages = [
+    hero1,
+    hero2,
+    hero3,
+    hero4,
+    hero5,
+    hero6
+  ];
+
   return (
     <>
       <Helmet>
@@ -191,6 +209,11 @@ const Services = () => {
               {t('services.hero.description')}
             </Typography>
           </motion.div>
+          
+          {/* Add Image Slider */}
+          <Box sx={{ mt: 6 }}>
+            <ImageSlider images={sliderImages} />
+          </Box>
         </Container>
       </Box>
 

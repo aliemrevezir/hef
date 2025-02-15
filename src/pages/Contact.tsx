@@ -97,7 +97,7 @@ const Contact = () => {
     try {
       const result = await emailjs.sendForm(
         'service_lttx4qc',
-        'template_j861ay1',
+        'template_j861ay1', 
         form,
         'IT8cAk2-mACQuYoFo'
       );
@@ -129,17 +129,6 @@ const Contact = () => {
       icon: EmailIcon,
       title: t('contact.info.email.title'),
       content: t('contact.info.email.content'),
-    },
-    {
-      icon: AccessTimeIcon,
-      title: t('contact.info.workingHours.title'),
-      content: (
-        <>
-          {t('contact.info.workingHours.weekdays')}
-          <br />
-          {t('contact.info.workingHours.weekend')}
-        </>
-      ),
     },
   ];
 
