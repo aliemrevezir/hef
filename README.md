@@ -2,7 +2,7 @@
 
 Modern ve profesyonel bir kurumsal website projesi. React, TypeScript ve Vite kullanılarak geliştirilmiştir.
 
-## Özellikler
+## Özelliklerzzzz
 
 - 🌐 Çok dilli destek (TR/EN)
 - 🎨 Modern ve responsive tasarım
