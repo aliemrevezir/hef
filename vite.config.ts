@@ -33,5 +33,14 @@ export default defineConfig({
         entryFileNames: 'assets/js/[name]-[hash].js',
       }
     }
+  },
+  // Add SPA fallback configuration
+  preview: {
+    port: 3000,
+    host: true,
+    strictPort: true,
+    headers: {
+      'Cache-Control': 'no-store',
+    },
   }
 })
