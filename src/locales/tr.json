@@ -6,6 +6,7 @@
       "services": "Hizmetlerimiz",
       "mechanicalServices": "Mekanik Hizmetler",
       "electronicalServices": "Elektronik Hizmetler",
+      "logisticsServices": "Lojistik Hizmetleri",
       "contact": "İletişim"
     },
     "buttons": {
@@ -100,6 +101,10 @@
     "quickLinks": "Hızlı Bağlantılar"
   },
   "services": {
+    "logisticsServices": {
+      "title": "Lojistik Hizmetleri",
+      "description": "Avrupa’dan BDT ülkelerine ve BDT ülkelerinden Avrupa ülkelerine kara yolu taşımacılığı ve deniz yolu taşımacılığı alanlarında güçlü bir hizmet ağı sunmaktayız. Komple ve parsiyel taşımacılık, deniz yolu parsiyel taşımacılığı, BDT ülkeleri ve Avrupa ülkelerine yönelik parsiyel ve FTL taşımacılık gibi hizmetlerle, müşterilerimize zamanında ve güvenilir çözümler sunuyoruz. Firmamız ayrıca, çeşitli ülkelere hava yolu taşımacılığı hizmeti de vermektedir. Firmamız Türkiye’de gümrük ve depolama hizmetleriyle lojistik süreçlerin her aşamasında sizlere destek vermektedir."
+    },
     "mechanicalServices": {
       "cncMachining": {
         "title": " CNC Dik İşleme & CNC Torna",

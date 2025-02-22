@@ -6,6 +6,7 @@
       "services": "Our Services",
       "mechanicalServices": "Mechanical Services",
       "electronicalServices": "Electronic Services",
+      "logisticsServices": "Logistics Services",
       "contact": "Contact"
     },
     "buttons": {
@@ -100,6 +101,10 @@
     "quickLinks": "Quick Links"
   },
   "services": {
+    "logisticsServices": {
+      "title": "Logistics Services",
+      "description": "We offer a strong service network in the fields of road transportation and maritime transportation from Europe to CIS countries and from CIS countries to European countries. We offer timely and reliable solutions to our customers with services such as complete and partial transportation, partial sea transportation, partial and FTL transportation to CIS countries and European countries. Our company also provides air transportation services to various countries. Our company supports you at every stage of the logistics processes with customs and storage services in Turkey."
+    },
     "mechanicalServices": {
       "cncMachining": {
         "title": "CNC Vertical Machining & CNC Turning",

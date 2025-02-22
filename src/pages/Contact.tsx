@@ -14,7 +14,6 @@ import { styled, alpha } from '@mui/material/styles';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import emailjs from '@emailjs/browser';
 
 const StyledCard = styled(Card)(({ theme }) => ({
@@ -123,7 +122,7 @@ const Contact = () => {
     {
       icon: PhoneIcon,
       title: t('contact.info.phone.title'),
-      content: t('contact.info.phone.content'),
+      content: '+90 (312) 504 10 40',
     },
     {
       icon: EmailIcon,

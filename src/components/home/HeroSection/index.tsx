@@ -113,7 +113,7 @@ const HeroSection = () => {
       title: t('home.hero.title'),
       subtitle: t('home.hero.subtitle'),
       description: t('home.hero.description'),
-      link: "/services",
+      link: "/logistics-services",
     },
     {
       image: hero2,

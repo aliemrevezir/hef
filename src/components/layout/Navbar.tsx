@@ -9,7 +9,6 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import LanguageIcon from '@mui/icons-material/Language';
 import { styled } from '@mui/material/styles';
@@ -69,6 +68,7 @@ const Navbar = () => {
   ];
 
   const servicePages = [
+    { name: t('common.navigation.logisticsServices'), path: '/logistics-services' },
     { name: t('common.navigation.mechanicalServices'), path: '/mechanical-services' },
     { name: t('common.navigation.electronicalServices'), path: '/electronical-services' },
   ];
@@ -114,7 +114,9 @@ const Navbar = () => {
         <Toolbar disableGutters sx={{ minHeight: '80px' }}>
           {/* Logo - Desktop */}
           <LogoContainer sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <img src="/images/imagesOptimized/logo.webp" alt="HEFMAC Global" />
+            <RouterLink to="/">
+              <img src="/images/imagesOptimized/logo.webp" alt="HEFMAC Global" />
+            </RouterLink>
           </LogoContainer>
 
           {/* Mobile Menu */}
@@ -198,7 +200,9 @@ const Navbar = () => {
 
           {/* Logo - Mobile */}
           <LogoContainer sx={{ display: { xs: 'flex', md: 'none' }, flexGrow: 1 }}>
-            <img src="/images/logo.png" alt="HEFMAC Global" />
+            <RouterLink to="/">
+              <img src="/images/logo.png" alt="HEFMAC Global" />
+            </RouterLink>
           </LogoContainer>
 
           {/* Desktop Menu */}

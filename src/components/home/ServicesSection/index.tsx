@@ -15,7 +15,9 @@ import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CableIcon from '@mui/icons-material/Cable';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
-import mekanik from '../../../assets/images/imagesOptimized/mekanik-uretim.webp';
+import mekanik from '../../../assets/images/mekanik.jpg';
+import lojistik from '../../../assets/images/lojistik.webp';
+import elektronik from '../../../assets/images/elektronik.webp';
 const StyledCard = styled(Card)(({ theme }) => ({
   height: '100%',
   display: 'flex',
@@ -110,8 +112,8 @@ const ServicesSection = () => {
       icon: LocalShippingIcon,
       title: t('home.services.cards.logistic.title'),
       description: t('home.services.cards.logistic.description'),
-      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2340&auto=format&fit=crop',
-      link: "/services"
+      image: lojistik,
+      link: "/logistics-services"
     },
     {
       icon: PrecisionManufacturingIcon,
@@ -124,7 +126,7 @@ const ServicesSection = () => {
       icon: CableIcon,
       title: t('home.services.cards.electronicProduction.title'),
       description: t('home.services.cards.electronicProduction.description'),
-      image: 'https://images.unsplash.com/photo-1580983218765-f663bec07b37?q=80&w=2340&auto=format&fit=crop',
+      image: elektronik,
       link: "/electronical-services"
     }
   ];

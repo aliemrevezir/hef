@@ -96,10 +96,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: FacebookIcon, url: '#' },
-    { icon: TwitterIcon, url: '#' },
     { icon: LinkedInIcon, url: '#' },
-    { icon: InstagramIcon, url: '#' },
   ];
 
   const navigationLinks = [
@@ -127,7 +124,7 @@ const Footer = () => {
             <IconBox>
               <PhoneIcon />
               <Typography variant="body1">
-                +90 (212) XXX XX XX
+                +90 (312) 504 10 40
               </Typography>
             </IconBox>
             <IconBox>
@@ -173,6 +170,12 @@ const Footer = () => {
             <Typography variant="h6" sx={{ fontWeight: 600, mb: 3 }}>
               {t('footer.services.title')}
             </Typography>
+            <FooterLink
+              component={RouterLink as any}
+              to="/logistics-services"
+            >
+              {t('services.logisticsServices.title')}
+            </FooterLink>
             <FooterLink
               component={RouterLink as any}
               to="/mechanical-services"

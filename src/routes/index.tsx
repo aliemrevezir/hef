@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
+import LogisticsServices from '../pages/LogisticsServices';
 
 // Lazy loaded pages
 const Home = lazy(() => import('../pages/Home'));
@@ -24,6 +25,7 @@ const AppRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/logistics-services" element={<LogisticsServices />} />
         <Route path="/mechanical-services" element={<MechanicalServices />} />
         <Route path="/electronical-services" element={<ElectronicalServices />} />
         <Route path="/contact" element={<Contact />} />
