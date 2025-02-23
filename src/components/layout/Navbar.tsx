@@ -201,7 +201,7 @@ const Navbar = () => {
           {/* Logo - Mobile */}
           <LogoContainer sx={{ display: { xs: 'flex', md: 'none' }, flexGrow: 1 }}>
             <RouterLink to="/">
-              <img src="/images/logo.png" alt="HEFMAC Global" />
+              <img src="/images/imagesOptimized/logo.webp" alt="HEFMAC Global" />
             </RouterLink>
           </LogoContainer>
 
