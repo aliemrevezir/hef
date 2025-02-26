@@ -90,7 +90,7 @@
   "footer": {
     "company": "HEFMAC Global",
     "rights": "Tüm hakları saklıdır",
-    "address": "Ankara, Türkiye",
+    "address": "Yeni Bağlıca, Kızılelma Caddesi No:39/3 İç Kapı No:22, 06790 Etimesgut/Ankara",
     "phone": "Telefon",
     "email": "E-posta",
     "services": {
@@ -103,7 +103,8 @@
   "services": {
     "logisticsServices": {
       "title": "Lojistik Hizmetleri",
-      "description": "Avrupa’dan BDT ülkelerine ve BDT ülkelerinden Avrupa ülkelerine kara yolu taşımacılığı ve deniz yolu taşımacılığı alanlarında güçlü bir hizmet ağı sunmaktayız. Komple ve parsiyel taşımacılık, deniz yolu parsiyel taşımacılığı, BDT ülkeleri ve Avrupa ülkelerine yönelik parsiyel ve FTL taşımacılık gibi hizmetlerle, müşterilerimize zamanında ve güvenilir çözümler sunuyoruz. Firmamız ayrıca, çeşitli ülkelere hava yolu taşımacılığı hizmeti de vermektedir. Firmamız Türkiye’de gümrük ve depolama hizmetleriyle lojistik süreçlerin her aşamasında sizlere destek vermektedir."
+      "description": "Avrupa’dan Asya'ya ve BDT ülkelerine yönelik ihracat, ithalat ve transit taşımacılık alanında hızlı, güvenilir ve entegre lojistik çözümler sunuyoruz. FTL ve LTL taşımacılık kapsamında kara, hava ve konteyner taşımacılığı alanlarında geniş hizmet ağımızla, uluslararası ticaretin her aşamasında stratejik ve verimli lojistik desteği sağlıyoruz.",
+      "subDescription": "Bunun yanı sıra, firmamız çeşitli ülkelere hava yolu taşımacılığı hizmeti sağlamakta olup, Türkiye’de gümrükleme ve depolama hizmetleriyle lojistik süreçlerin her aşamasında müşterilerimize uçtan uca kapsamlı destek sunmaktadır."
     },
     "mechanicalServices": {
       "cncMachining": {
@@ -275,7 +276,7 @@
       "title": "İletişim Bilgileri",
       "address": {
         "title": "Adres",
-        "content": "Ankara, Türkiye"
+        "content": "Yeni Bağlıca, Kızılelma Caddesi No:39/3 İç Kapı No:22, 06790 Etimesgut/Ankara"
       },
       "phone": {
         "title": "Telefon",

@@ -103,7 +103,8 @@
   "services": {
     "logisticsServices": {
       "title": "Logistics Services",
-      "description": "We offer a strong service network in the fields of road transportation and maritime transportation from Europe to CIS countries and from CIS countries to European countries. We offer timely and reliable solutions to our customers with services such as complete and partial transportation, partial sea transportation, partial and FTL transportation to CIS countries and European countries. Our company also provides air transportation services to various countries. Our company supports you at every stage of the logistics processes with customs and storage services in Turkey."
+      "description": "We offer fast, reliable and integrated logistics solutions for export, import and transit transportation from Europe to Asia and CIS countries. We provide strategic and efficient logistics support at every stage of international trade with our wide service network in the fields of land, air and container transportation within the scope of FTL and LTL transportation.",
+      "subDescription": "In addition to this, our company provides air transportation services to various countries. Our company supports you at every stage of the logistics processes with customs and storage services in Turkey."
     },
     "mechanicalServices": {
       "cncMachining": {
@@ -274,7 +275,7 @@
       "title": "Contact Information",
       "address": {
         "title": "Address",
-        "content": "Ankara, Turkey"
+        "content": "Yeni Bağlıca, Kızılelma Street No:39/3 Inner Door No:22, 06790 Etimesgut/Ankara, Turkey"
       },
       "phone": {
         "title": "Phone",

@@ -188,6 +188,19 @@ const Services = () => {
             >
               {t('services.logisticsServices.description')}
             </Typography>
+            <Typography
+              variant="body2"
+              align="center"
+              sx={{
+                color: '#666',
+                fontSize: { xs: '1rem', md: '1.25rem' },
+                maxWidth: '800px',
+                mx: 'auto',
+                lineHeight: 1.8,
+              }}
+            >
+              {t('services.logisticsServices.subDescription')}
+            </Typography>
           </motion.div>
           
           {/* Add Image Slider */}

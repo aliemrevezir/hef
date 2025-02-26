@@ -22,8 +22,11 @@ import hero3 from '../../../assets/images/imagesOptimized/elektronik_banner.webp
 const StyledSwiper = styled(Swiper)({
   width: '100%',
   height: 'calc(100vh - 80px)', // Navbar height is 80px
+  maxHeight: '800px', // Maksimum yükseklik sınırı
   '& .swiper-slide': {
     position: 'relative',
+    height: '100%',
+    overflow: 'hidden',
   },
   '& .swiper-pagination-bullet': {
     width: '12px',
@@ -84,6 +87,12 @@ const SlideImage = styled('img')({
   width: '100%',
   height: '100%',
   objectFit: 'cover',
+  objectPosition: 'center center',
+  maxHeight: 'calc(100vh - 80px)',
+  '@media (max-width: 768px)': {
+    objectPosition: 'center center',
+    height: '100%',
+  },
 });
 
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -155,11 +164,12 @@ const HeroSection = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <motion.div
-              initial={{ scale: 1.1 }}
-              animate={{ scale: 1 }}
+              initial={{ scale: 1.05, opacity: 0.8 }}
+              animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 6, ease: 'easeOut' }}
+              style={{ height: '100%', width: '100%', overflow: 'hidden' }}
             >
-              <SlideImage src={slide.image} alt={slide.title} />
+              <SlideImage src={slide.image} alt={slide.title} loading="eager" />
             </motion.div>
             <SlideContent>
               <Container maxWidth="lg">
