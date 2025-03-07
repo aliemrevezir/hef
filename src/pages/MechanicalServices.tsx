@@ -143,7 +143,12 @@ const Services = () => {
       <Helmet>
         <title>{t('services.hero.title')} - {t('footer.company')}</title>
         <meta name="description" content={t('services.hero.description')} />
-        <meta name="keywords" content="logistics services, mechanical production, electronic manufacturing, industrial solutions, global trade" />
+        <meta name="keywords" content="mechanical production, CNC machining, plastic injection, laser cutting, special production, mechanical services, mechanical production services, mechanical services in Turkey, mechanical services in Istanbul, mechanical services in Ankara, mechanical services in Izmir, mechanical services in Turkey" />
+        <link rel="canonical" href="https://www.hefmac.com/mechanical-services" />
+        <link rel="alternate" href="https://www.hefmac.com/mechanical-services" hrefLang="tr" />
+        <link rel="alternate" href="https://www.hefmac.com/mechanical-services" hrefLang="en" />
+        <link rel="alternate" href="https://www.hefmac.com/mechanical-services" hrefLang="ru" />
+        <link rel="alternate" href="https://www.hefmac.com/mechanical-services" hrefLang="x-default" />
       </Helmet>
 
       {/* Hero Section */}

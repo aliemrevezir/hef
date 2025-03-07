@@ -1,0 +1,33 @@
+# HEFMAC Global
+
+> HEFMAC Global, endüstriyel üretim, lojistik ve elektronik üretim alanlarında uluslararası çözümler sunan lider bir kuruluştur. Şirket, üç ana hizmet alanında faaliyet göstermektedir: lojistik hizmetleri, mekanik üretim ve elektronik üretim. Tüm hizmetler TR, EN ve RU dillerinde sunulmaktadır.
+
+HEFMAC Global'in temel özellikleri:
+- ISO 9001 sertifikalı üretim ve hizmet süreçleri
+- Uluslararası ticaret ve üretimde kapsamlı çözümler
+- Üç dilli (TR/EN/RU) tam entegre web platformu
+- Avrupa ve Asya'da geniş hizmet ağı
+
+## Ana Hizmetler
+
+- [Lojistik Hizmetleri](/logistics-services): Avrupa'dan Asya'ya ve BDT ülkelerine yönelik ihracat, ithalat ve transit taşımacılık çözümleri
+- [Mekanik Üretim](/mechanical-services): CNC işleme, plastik enjeksiyon, lazer kesim ve özel üretim hizmetleri
+- [Elektronik Üretim](/electronical-services): PCB dizgi, elektronik kart üretimi ve test hizmetleri
+
+## Kurumsal
+
+- [Hakkımızda](/about): Şirket misyonu, vizyonu ve değerleri
+- [İletişim](/contact): İletişim bilgileri ve form
+- [Hizmetler Genel Bakış](/services): Tüm hizmetlerin detaylı açıklaması
+
+## Dil Dosyaları
+
+- [Türkçe İçerik](/locales/tr.json): Türkçe dil paketi ve çeviriler
+- [İngilizce İçerik](/locales/en.json): İngilizce dil paketi ve çeviriler
+- [Rusça İçerik](/locales/ru.json): Rusça dil paketi ve çeviriler
+
+## Optional
+
+- [SEO Meta Etiketleri](/index.html): Sayfa meta etiketleri ve yapısal veriler
+- [Site Haritası](/sitemap.xml): XML formatında site haritası
+- [Robots.txt](/robots.txt): Tarayıcı yönergeleri 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Ana Sayfa -->
+  <url>
+    <loc>https://hefmacglobal.com/</loc>
+    <lastmod>2025-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="canonical" href="https://hefmacglobal.com/" />
+  </url>
+
+  <!-- Hakkımızda -->
+  <url>
+    <loc>https://hefmacglobal.com/about</loc>
+    <lastmod>2025-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="canonical" href="https://hefmacglobal.com/about" />
+  </url>
+
+  <!-- Hizmetler Ana Sayfa -->
+  <url>
+    <loc>https://hefmacglobal.com/services</loc>
+    <lastmod>2025-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="canonical" href="https://hefmacglobal.com/services" />
+  </url>
+
+  <!-- Lojistik Hizmetleri -->
+  <url>
+    <loc>https://hefmacglobal.com/logistics-services</loc>
+    <lastmod>2025-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="canonical" href="https://hefmacglobal.com/logistics-services" />
+    
+  </url>
+
+  <!-- Mekanik Hizmetler -->
+  <url>
+    <loc>https://hefmacglobal.com/mechanical-services</loc>
+    <lastmod>2025-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="canonical" href="https://hefmacglobal.com/mechanical-services" />
+    
+  </url>
+
+  <!-- Elektronik Hizmetler -->
+  <url>
+    <loc>https://hefmacglobal.com/electronical-services</loc>
+    <lastmod>2025-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="canonical" href="https://hefmacglobal.com/electronical-services" />
+    
+  </url>
+
+  <!-- İletişim -->
+  <url>
+    <loc>https://hefmacglobal.com/contact</loc>
+    <lastmod>2025-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="canonical" href="https://hefmacglobal.com/contact" />
+
+  </url>
+
+</urlset>

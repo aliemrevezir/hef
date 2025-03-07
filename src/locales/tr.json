@@ -288,5 +288,11 @@
       }
       
     }
+  },
+  "notFound": {
+    "title": "Sayfa Bulunamadı",
+    "description": "Aradığınız sayfa mevcut değil veya taşınmış olabilir. Ana sayfaya dönebilir veya hizmetlerimizi inceleyebilirsiniz.",
+    "backToHome": "Ana Sayfaya Dön",
+    "exploreServices": "Hizmetlerimizi Keşfedin"
   }
 }

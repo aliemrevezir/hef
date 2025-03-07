@@ -123,7 +123,12 @@ const Services = () => {
       <Helmet>
         <title>{t('services.hero.title')} - {t('footer.company')}</title>
         <meta name="description" content={t('services.hero.description')} />
-        <meta name="keywords" content="logistics services, mechanical production, electronic manufacturing, industrial solutions, global trade" />
+        <meta name="keywords" content="logistics services, industrial solutions, global trade, CIS Countries, CIS Logistics, CIS Logistics Services, CIS Logistics Companies, CIS Logistics Companies in Turkey, CIS Logistics Companies in Istanbul, CIS Logistics Companies in Ankara, CIS Logistics Companies in Izmir, CIS Logistics Companies in Turkey" />
+        <link rel="canonical" href="https://www.hefmac.com/logistics-services" />
+        <link rel="alternate" href="https://www.hefmac.com/logistics-services" hrefLang="tr" />
+        <link rel="alternate" href="https://www.hefmac.com/logistics-services" hrefLang="en" />
+        <link rel="alternate" href="https://www.hefmac.com/logistics-services" hrefLang="ru" />
+        <link rel="alternate" href="https://www.hefmac.com/logistics-services" hrefLang="x-default" />
       </Helmet>
 
       {/* Hero Section */}

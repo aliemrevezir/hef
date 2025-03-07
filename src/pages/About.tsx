@@ -105,6 +105,11 @@ const About = () => {
         <title>{t('about.content.title')} - {t('footer.company')}</title>
         <meta name="description" content={t('about.content.mainText')} />
         <meta name="keywords" content="hefmac global, international trade, manufacturing, logistics, quality solutions" />
+        <link rel="canonical" href="https://www.hefmac.com/about" />
+        <link rel="alternate" href="https://www.hefmac.com/about" hrefLang="tr" />
+        <link rel="alternate" href="https://www.hefmac.com/about" hrefLang="en" />
+        <link rel="alternate" href="https://www.hefmac.com/about" hrefLang="ru" />
+        <link rel="alternate" href="https://www.hefmac.com/about" hrefLang="x-default" />
       </Helmet>
 
       {/* Mission & Vision Section */}

@@ -286,5 +286,11 @@
         "content": "info@hefmacglobal.com"
       }
     }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or may have been moved. You can return to the homepage or explore our services.",
+    "backToHome": "Back to Home",
+    "exploreServices": "Explore Our Services"
   }
 }

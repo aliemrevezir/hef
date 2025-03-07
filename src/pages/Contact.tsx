@@ -137,6 +137,11 @@ const Contact = () => {
         <title>{t('contact.hero.title')} - {t('footer.company')}</title>
         <meta name="description" content={t('contact.hero.description')} />
         <meta name="keywords" content="contact, get in touch, business inquiries, customer support, global logistics" />
+        <link rel="canonical" href="https://www.hefmac.com/contact" />
+        <link rel="alternate" href="https://www.hefmac.com/contact" hrefLang="tr" />
+        <link rel="alternate" href="https://www.hefmac.com/contact" hrefLang="en" />
+        <link rel="alternate" href="https://www.hefmac.com/contact" hrefLang="ru" />
+        <link rel="alternate" href="https://www.hefmac.com/contact" hrefLang="x-default" />
       </Helmet>
 
       {/* Hero Section */}

@@ -124,6 +124,11 @@ const Services = () => {
         <title>{t('services.hero.title')} - {t('footer.company')}</title>
         <meta name="description" content={t('services.hero.description')} />
         <meta name="keywords" content="logistics services, mechanical production, electronic manufacturing, industrial solutions, global trade" />
+        <link rel="canonical" href="https://www.hefmac.com/services" />
+        <link rel="alternate" href="https://www.hefmac.com/services" hrefLang="tr" />
+        <link rel="alternate" href="https://www.hefmac.com/services" hrefLang="en" />
+        <link rel="alternate" href="https://www.hefmac.com/services" hrefLang="ru" />
+        <link rel="alternate" href="https://www.hefmac.com/services" hrefLang="x-default" />
       </Helmet>
 
       {/* Hero Section */}

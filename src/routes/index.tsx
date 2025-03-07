@@ -3,6 +3,7 @@ import { lazy, Suspense } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
 import LogisticsServices from '../pages/LogisticsServices';
+import NotFound from '../pages/NotFound';
 
 // Lazy loaded pages
 const Home = lazy(() => import('../pages/Home'));
@@ -29,6 +30,7 @@ const AppRoutes = () => {
         <Route path="/mechanical-services" element={<MechanicalServices />} />
         <Route path="/electronical-services" element={<ElectronicalServices />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
   );
