@@ -129,8 +129,8 @@ const Footer = () => {
             </IconBox>
             <IconBox>
               <EmailIcon />
-              <Typography variant="body1" component="a" href="mailto:info@hefmacglobal.com">
-                info@hefmacglobal.com
+              <Typography variant="body1" component="a" href="mailto:info@hefmac.com">
+                info@hefmac.com
               </Typography>
             </IconBox>
             <Box sx={{ display: 'flex', mt: 3 }}>
